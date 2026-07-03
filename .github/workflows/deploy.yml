@@ -14,11 +14,14 @@ on:
       - 'themes/**'
       - 'go.mod'
       - 'go.sum'
+      - '.github/workflows/**'
   workflow_run:
     workflows: ['Update theme components']
     types:
       - completed
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
   Actions-Hugo-Deploy:
     runs-on: ubuntu-latest
@@ -26,8 +29,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v6
         with:
-          ssh-key: ${{ secrets.SYNC_CONTENT }}
-          submodules: true # Fetch Hugo themes (true OR recursive)
+          submodules: false # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
       
       - uses: pnpm/action-setup@v4
@@ -76,22 +78,21 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          deploy_key: ${{ secrets.GP_DEPLOY_KEY }}
-          external_repository: Lruihao/lruihao.github.io
-          publish_branch: main
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./public
-          user_name: 'Cell[bot]'
-          user_email: 'lrhx@users.noreply.github.com'
+          user_name: 'github-actions[bot]'
+          user_email: '41898282+github-actions[bot]@users.noreply.github.com'
           commit_message: ':rocket: ${{ github.event.head_commit.message }}'
-          force_orphan: false  # once a year
+          force_orphan: false
 
-      - name: Update Algolia index
-        env:
-          ALGOLIA_APP_ID: MTJNHU0JVB
-          ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
-          ALGOLIA_INDEX_NAME: 'index'
-          ALGOLIA_INDEX_FILE: './public/search.json'
-        run: pnpm algolia
+      # - name: Update Algolia index
+      #   env:
+      #     ALGOLIA_APP_ID: MTJNHU0JVB
+      #     ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+      #     ALGOLIA_INDEX_NAME: 'index'
+      #     ALGOLIA_INDEX_FILE: './public/search.json'
+      #   run: pnpm algolia
 
       # - name: Install coscmd
       #   run: sudo pip install coscmd
