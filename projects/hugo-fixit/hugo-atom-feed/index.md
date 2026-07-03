@@ -2,15 +2,15 @@
 
 # Hugo ATOM Feed
 
-中文 | [English](https://raw.githubusercontent.com/hugo-fixit/hugo-atom-feed/refs/heads/main/README.en.md)
+English | [中文](https://raw.githubusercontent.com/hugo-fixit/hugo-atom-feed/refs/heads/main/README.md)
 
-> Hugo 主题组件，用于自定义 ATOM feed 输出格式。
+> Hugo theme component for ATOM feed custom Output Format.
 
-该组件为您的站点启用 ATOM feeds。
+This component enables ATOM feeds for your site.
 
-## 安装组件
+## Install Component
 
-安装方法与[安装主题](https://fixit.lruihao.cn/documentation/installation/)相同。有几种安装方式，选择一种，例如通过 Hugo Modules 安装：
+The installation method is the same as [installing a theme](https://fixit.lruihao.cn/documentation/installation/). There are several ways to install, choose one, for example, install through Hugo Modules:
 
 ```diff
 [module]
@@ -22,21 +22,21 @@ path = "github.com/hugo-fixit/FixIt"
 + path = "github.com/hugo-fixit/hugo-atom-feed"
 ```
 
-## 配置
+## Configuration
 
-将 "atom" 添加到您希望创建 ATOM feeds 的所有页面类型中：
+Add "atom" to all the Page Kinds for which you want to create ATOM feeds:
 
 ```toml
 [outputs]
 # <baseURL>/atom.xml
 home = ["html", "rss", "atom"]
-# <baseURL>/posts/atom.xml 等
+# <baseURL>/posts/atom.xml etc.
 section = ["html", "rss", "atom"]
-# <baseURL>/tags/foo/atom.xml 等
+# <baseURL>/tags/foo/atom.xml etc.
 term = ["html", "rss", "atom"]
 ```
 
-如果您的站点使用多个主题组件，则需要合并所有主题组件的 `outputs` 配置。例如，如果您的站点同时使用 `FixIt` 和 `hugo-atom-feed` 主题组件，则需要合并两个主题组件的 `outputs` 配置：
+If your site uses multiple theme components, you need to merge the `outputs` configuration of all theme components. For example, if your site uses both the `FixIt` and `hugo-atom-feed` theme components, you need to merge the `outputs` configuration of the two theme components:
 
 ```toml
 [outputs]
@@ -48,44 +48,44 @@ taxonomy = ["html"]
 term = ["html", "rss", "atom"]
 ```
 
-### 参数
+### Parameters
 
-您可以在站点配置文件中设置以下参数：
+You can set the following parameters in your site configuration file:
 
 ```toml
 [params]
 
-# 全局 ATOM feed 配置
+# Global Feed config for ATOM feed.
 [params.feed]
-# feed 中包含的文章数量。如果设置为 -1，则包含所有文章。
+# The number of posts to include in the feed. If set to -1, all posts.
 limit = 10
-# 是否在 feed 中显示全文。
+# whether to show the full text content in feed.
 fullText = true
 
-# 分类页面配置（分类中的所有页面）
+# Section page config (all pages in section)
 [params.section]
 
-# 分类页面的 ATOM feed 配置
+# Section feed config for ATOM feed.
 [params.section.feed]
-# feed 中包含的文章数量。如果设置为 -1，则包含所有文章。
+# The number of posts to include in the feed. If set to -1, all posts.
 limit = -1
-# 是否在 feed 中显示全文。
+# whether to show the full text content in feed.
 fullText = false
 
-# 标签列表（分类或标签）页面配置
+# Term list (category or tag) page config
 [params.list]
 
-# 标签列表的 ATOM feed 配置
+# Term list feed config for ATOM feed.
 [params.list.feed]
-# feed 中包含的文章数量。如果设置为 -1，则包含所有文章。
+# The number of posts to include in the feed. If set to -1, all posts.
 limit = -1
-# 是否在 feed 中显示全文。
+# whether to show the full text content in feed.
 fullText = false
 ```
 
-### Front matter
+### Front Matter
 
-您可以在内容文件的 front matter 中设置以下参数：
+You can set the following parameters in the front matter of the content file:
 
 ```yaml
 ---
@@ -93,7 +93,7 @@ title: "Hello World"
 date: 2024-08-24T16:06:33+08:00
 hiddenFromFeed: true
 feed:
-  # feed.limit 仅在分类或标签页面（_index.md）中有效。
+  # feed.limit only valid in section or term page(_index.md).
   limit: 10
   fullText: true
 ---
@@ -102,6 +102,6 @@ feed:
 
 ---
 
-> 作者: [hugo-fixit](https://github.com/hugo-fixit)  
-> URL: https://lruihao.cn/projects/hugo-fixit/hugo-atom-feed/  
+> Author: [hugo-fixit](https://github.com/hugo-fixit)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/hugo-fixit/hugo-atom-feed/  
 

@@ -130,6 +130,6 @@ transform: rotate(atan2(e, 30));
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/css-viewport/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/css-viewport/  
 

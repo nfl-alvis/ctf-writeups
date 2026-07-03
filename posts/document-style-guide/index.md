@@ -627,6 +627,6 @@ $1,000
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/document-style-guide/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/document-style-guide/  
 

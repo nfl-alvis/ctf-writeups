@@ -4,27 +4,29 @@
 
 [![NPM version](https://img.shields.io/npm/v/@hugo-fixit/fixit-releaser.svg)](https://www.npmjs.com/package/@hugo-fixit/fixit-releaser)
 
-中文 | [English](https://raw.githubusercontent.com/hugo-fixit/fixit-releaser/refs/heads/main/README.en.md)
+English | [中文](https://raw.githubusercontent.com/hugo-fixit/fixit-releaser/refs/heads/main/README.md)
 
-版本控制、变更日志和发布工具。
+Versioning, change-log and release tool.
 
 > [!CAUTION]
-> 该工具已停止维护！建议使用 [auto changelog plus](https://github.com/Lruihao/auto-changelog-plus) 或者 [auto changelog](https://github.com/cookpete/auto-changelog) 生成日志。
+> Maintenance of this tool has stopped! It is recommended to use [auto changelog plus](https://github.com/Lruihao/auto-changelog-plus) or [auto changelog](https://github.com/cookpete/auto-changelog) to generate changelogs.
 
-## ✨ 功能
+## ✨ Features
 
-- 📝 自动生成变更日志（Conventional Commits 规范）
-- 🔖 更新 FixIt 内部版本号 `*`
+- 📝 Automatically generate changelog (Conventional Commits specification)
+- 🔖 Update FixIt internal version number `*`
 
-## 📦 安装
+> Features marked with `*` are only applicable to [FixIt](https://github.com/hugo-fixit/FixIt).
 
-| 包管理器 | 命令                                      |
-| -------- | ----------------------------------------- |
-| pnpm     | `pnpm add -D @hugo-fixit/fixit-releaser`  |
-| yarn     | `yarn add -D @hugo-fixit/fixit-releaser`  |
-| npm      | `npm i -D @hugo-fixit/fixit-releaser`     |
+## 📦 Installation
 
-在 `package.json` 中添加命令：
+| Package Manager | Command                                  |
+| --------------- | ---------------------------------------- |
+| pnpm            | `pnpm add -D @hugo-fixit/fixit-releaser` |
+| yarn            | `yarn add -D @hugo-fixit/fixit-releaser` |
+| npm             | `npm i -D @hugo-fixit/fixit-releaser`    |
+
+Add commands to `package.json`:
 
 ```json
 {
@@ -34,70 +36,70 @@
 }
 ```
 
-## 🚀 用法
+## 🚀 Usage
 
-### 变更日志
+### Changelog
 
-基于 [Conventional Commits](https://www.conventionalcommits.org/zh-hans/v1.0.0/) 规范，支持以下类型的提交：
+Based on [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification, supports the following commit types:
 
-- `feat:` 新功能
-- `fix:` 修复问题
-- `perf:` 性能优化
-- `refactor:` 代码重构
-- `docs:` 文档变更
-- `test:` 测试相关
-- `style:` 代码格式调整
-- `chore:` 构建过程或辅助工具的变动
-- `build:` 构建系统变动
-- `ci:` 持续集成配置变动
-- `revert:` 代码回滚
-- 支持 scope：`feat(api):`, `fix(ui):` 等
-- 支持 emoji：`:sparkles: feat:`, `✨ feat:` 等
-- 支持 Breaking Changes：`feat!:`, `feat(scope)!:`, `BREAKING CHANGE:` 等格式
-- 自动忽略 WIP 提交：`wip:`, `Wip:` 等临时提交不会包含在变更日志中
+- `feat:` New features
+- `fix:` Bug fixes
+- `perf:` Performance optimization
+- `refactor:` Code refactoring
+- `docs:` Documentation changes
+- `test:` Test related
+- `style:` Code formatting
+- `chore:` Build process or auxiliary tool changes
+- `build:` Build system changes
+- `ci:` Continuous integration configuration changes
+- `revert:` Code rollback
+- Scope support: `feat(api):`, `fix(ui):`, etc.
+- Emoji support: `:sparkles: feat:`, `✨ feat:`, etc.
+- Breaking Changes support: `feat!:`, `feat(scope)!:`, `BREAKING CHANGE:`, etc.
+- Automatically ignore WIP commits: `wip:`, `Wip:` and other temporary commits are excluded from changelog
 
-例如：
+For example:
 
 ```bash
-# 生成全部版本的变更日志
+# Generate changelog for all versions
 npx fixit-releaser changelog
-# 从指定版本开始生成变更日志
+# Generate changelog from specified version
 npx fixit-releaser changelog --starting-version v0.3.10
 ```
 
-> 执行 `fixit-releaser changelog -h` 获取帮助或者参考 [auto-changelog](https://github.com/cookpete/auto-changelog) 文档。
+> Execute `fixit-releaser changelog -h` to get help or refer to the [auto-changelog](https://github.com/cookpete/auto-changelog) documentation.
 
-### 版本 `*`
+### Version `*`
 
 > [!WARNING]
-> 已经集成到 [FixIt](https://github.com/hugo-fixit/FixIt) monorepo，见 [FixIt#629](https://github.com/hugo-fixit/FixIt/pull/629)
+> Already integrated into [FixIt](https://github.com/hugo-fixit/FixIt) monorepo， See [FixIt#629](https://github.com/hugo-fixit/FixIt/pull/629)
 
-FixIt 内部开发版本格式如下：
+FixIt internal development version format:
 
 ```plaintext
 v{major}.{minor}.{patch+1}-{timestamp}-{shortHash}
 ```
 
-例如：
+For example:
 
 ```bash
-# 更新 FixIt 正式版本
+# Update FixIt production version
 npx fixit-releaser version prod
-# 更新 FixIt 开发版本
+# Update FixIt development version
 npx fixit-releaser version dev
 ```
 
-## ⚙️ 配置
+## ⚙️ Configuration
 
-`fixit-releaser changelog` 配置与 auto-changelog 兼容。
+The `fixit-releaser changelog` configuration is compatible with auto-changelog.
 
-## 🙏 致谢
+## 🙏 Acknowledgments
 
 - [auto-changelog](https://github.com/cookpete/auto-changelog)
 
 
 ---
 
-> 作者: [hugo-fixit](https://github.com/hugo-fixit)  
-> URL: https://lruihao.cn/projects/hugo-fixit/fixit-releaser/  
+> Author: [hugo-fixit](https://github.com/hugo-fixit)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/hugo-fixit/fixit-releaser/  
 

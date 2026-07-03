@@ -43,6 +43,6 @@ Windows 系统设计遵循了 `CR + LF` 的约定，而 Unix 系统则遵循了 
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/newline/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/newline/  
 

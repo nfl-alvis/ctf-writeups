@@ -104,6 +104,6 @@ WAMP 服务我安装了好几次，每次因为修改配置文件搞崩了。第
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/wamproot/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/wamproot/  
 

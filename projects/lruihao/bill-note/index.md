@@ -36,6 +36,6 @@ push the `bill-note/docs` to web server.
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/projects/lruihao/bill-note/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/lruihao/bill-note/  
 

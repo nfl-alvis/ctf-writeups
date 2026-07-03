@@ -171,6 +171,6 @@ Web Components 正是老馆主钦点的 **“锦衣卫”**。
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/wc-01-prologue/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/wc-01-prologue/  
 

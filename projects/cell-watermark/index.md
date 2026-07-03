@@ -107,6 +107,6 @@ Force destroy watermark
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/projects/cell-watermark/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/cell-watermark/  
 

@@ -57,6 +57,6 @@ QQ 讨论群: 374918234
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/projects/lruihao/kityminder-core/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/lruihao/kityminder-core/  
 

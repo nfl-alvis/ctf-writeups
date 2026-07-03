@@ -37,6 +37,6 @@ The quick brown fox jumps over the lazy dog
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/20b75e9/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/20b75e9/  
 

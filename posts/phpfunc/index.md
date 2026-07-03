@@ -34,6 +34,6 @@ echo createTable(5,5,'pink','hello lruihao');
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/phpfunc/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/phpfunc/  
 

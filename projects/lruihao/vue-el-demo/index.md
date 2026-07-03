@@ -19,6 +19,6 @@ This project is built with [Rsbuild](https://rsbuild.dev/), a fast build tool po
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/projects/lruihao/vue-el-demo/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/lruihao/vue-el-demo/  
 

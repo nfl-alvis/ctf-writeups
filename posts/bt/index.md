@@ -43,6 +43,6 @@ wget -O install.sh http://download.bt.cn/install/install_6.0.sh && bash install.
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/bt/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/bt/  
 

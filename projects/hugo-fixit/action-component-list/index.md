@@ -148,6 +148,6 @@ The list of hugo-fixit components will be displayed here.
 
 ---
 
-> 作者: [hugo-fixit](https://github.com/hugo-fixit)  
-> URL: https://lruihao.cn/projects/hugo-fixit/action-component-list/  
+> Author: [hugo-fixit](https://github.com/hugo-fixit)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/hugo-fixit/action-component-list/  
 

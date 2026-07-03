@@ -71,6 +71,6 @@ drwxr-xr-x   5 liruihao  staff   160B Jul 29 17:48 file-share
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/linux-permission/  
-> 转载 URL: https://blog.csdn.net/icanlove/article/details/39667265/
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/linux-permission/  
+> Repost URL: https://blog.csdn.net/icanlove/article/details/39667265/

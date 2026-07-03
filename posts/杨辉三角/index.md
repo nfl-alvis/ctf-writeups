@@ -43,6 +43,6 @@
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/  
 

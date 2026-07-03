@@ -49,6 +49,6 @@ article {
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/projects/lruihao/mmt-webfont/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/lruihao/mmt-webfont/  
 

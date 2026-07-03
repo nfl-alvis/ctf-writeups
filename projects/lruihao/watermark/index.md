@@ -53,6 +53,6 @@ Create watermark for webpage and automatic adjust when windows resize.
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/projects/lruihao/watermark/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/lruihao/watermark/  
 

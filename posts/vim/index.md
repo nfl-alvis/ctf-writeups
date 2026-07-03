@@ -219,6 +219,6 @@ Vim 速查表 - 帮你提高 N 倍效率
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/vim/  
-> 转载 URL: https://www.jianshu.com/p/6aa2e0e39f99
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/vim/  
+> Repost URL: https://www.jianshu.com/p/6aa2e0e39f99

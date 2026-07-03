@@ -63,6 +63,6 @@ pyinstaller --onefile --nowindowed csdn.py
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/pyinstallererror/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/pyinstallererror/  
 

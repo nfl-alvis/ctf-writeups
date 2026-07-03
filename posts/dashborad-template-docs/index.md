@@ -346,6 +346,6 @@ CREATE TABLE `dashboard` (
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/dashborad-template-docs/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/dashborad-template-docs/  
 

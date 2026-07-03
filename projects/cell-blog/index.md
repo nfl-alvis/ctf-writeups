@@ -139,6 +139,6 @@ Cell Blog is open-sourced software licensed under the MIT license.
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/projects/cell-blog/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/cell-blog/  
 

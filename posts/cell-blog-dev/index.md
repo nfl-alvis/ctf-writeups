@@ -362,6 +362,6 @@ php artisan vendor:publish --tag=laravel-admin-grid-lightbox
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/cell-blog-dev/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/cell-blog-dev/  
 

@@ -186,6 +186,6 @@ HTTP 状态码（HTTP Status Code）是用以表示网页服务器 HTTP 响应�
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/restful/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/restful/  
 

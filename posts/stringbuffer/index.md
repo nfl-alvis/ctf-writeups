@@ -222,6 +222,6 @@ public static int getIndex(int[] arr,int value) {
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/stringbuffer/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/stringbuffer/  
 

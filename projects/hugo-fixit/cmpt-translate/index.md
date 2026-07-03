@@ -6,10 +6,10 @@
 ![auto-translate](https://github.com/user-attachments/assets/10ab49bb-973f-4630-9a79-9639783bab06)
 
 <div align="center" class="ignore">
-  <p>一个基于 <a href="https://github.com/xnx3/translate">translate.js</a> 实现网站自动翻译的组件。</p>
-  简体中文 |
+  <p>A component for website automatic translation base on <a href="https://github.com/xnx3/translate">translate.js</a>.</p>
+  <a href="https://raw.githubusercontent.com/hugo-fixit/cmpt-translate/refs/heads/main/README.md">简体中文</a> |
   <a href="https://fixit.lruihao.cn/zh-cn/ecosystem/hugo-fixit/cmpt-translate/?lang=chinese_traditional">繁體中文</a> |
-  <a href="https://raw.githubusercontent.com/hugo-fixit/cmpt-translate/refs/heads/main/README.en.md">English</a> |
+  English |
   <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-translate/?lang=french">Français</a> |
   <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-translate/?lang=russian">Русский язык</a> |
   <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-translate/?lang=spanish">Español</a> |
@@ -21,43 +21,43 @@
 
 ## Demo
 
-无论原站点是多语言还是单语言，都可以通过此组件额外增加自动翻译功能。
+Whether the original site is multilingual or single-language, you can add automatic translation feature through this component.
 
-- 多语言 Hugo 站点：[fixit.lruihao.cn](https://fixit.lruihao.cn)
-- 单语言 Hugo 站点：[lruihao.cn](https://lruihao.cn)
+- Multilingual Hugo site: [fixit.lruihao.cn](https://fixit.lruihao.cn)
+- Single-language Hugo site: [lruihao.cn](https://lruihao.cn)
 
-在网站右上角切换配置的翻译语言，或者在 URL 中添加 `?lang=` 参数指定任意[支持的翻译语言](https://api.translate.zvo.cn/language.json)。例如：`?lang=korean`。
+Switch the configured translation language in the upper right corner of the website, or add the `?lang=` parameter to the URL to specify any [supported translation language](https://api.translate.zvo.cn/language.json). e.g. `?lang=korean`.
 
-## 特性
+## Features
 
-> 每日翻译字符 **200 万**！\
-> _无语言配置文件、无 API Key、对 SEO 友好！_
+> Daily translation characters **2 million**!\
+> _No language configuration file, no API Key, SEO friendly!_
 
-- [x] 支持整页自动翻译
-- [x] 支持指定翻译语言
-- [x] 支持可选翻译服务
-- [x] 支持忽略翻译元素
-- [x] 支持忽略选择器
-- [x] 支持忽略关键词翻译
-- [x] 支持检测本地语言
-- [x] 支持自定义翻译术语
-- [x] 支持 CDN
-- [x] 支持[企业级翻译通道](#enterprise) *
+- [x] Support automatic translation of the entire page
+- [x] Support specifying the translation language
+- [x] Support optional translation services
+- [x] Support ignoring translation elements
+- [x] Support ignoring selectors
+- [x] Support ignoring keyword translation
+- [x] Support detecting local languages
+- [x] Support custom translation terms
+- [x] Support CDN
+- [x] Support [Enterprise Translation Channel](#enterprise) *
 
-## 要求
+## Requirements
 
-- Hugo v0.156.0 或更高版本。
-- FixIt v0.4.5 或更高版本。
+- Hugo v0.156.0 or later.
+- FixIt v0.4.5 or later.
 
-## 安装组件
+## Install Component
 
-安装方式与 [安装主题](https://fixit.lruihao.cn/zh-cn/documentation/installation/) 相同，有多种安装方式，任选一种即可，这里介绍两种主流方式。
+The installation method is the same as [installing a theme](https://fixit.lruihao.cn/documentation/installation/). There are several ways to install, choose one, Here are two mainstream ways.
 
-### 作为 Hugo 模块安装
+### Install as Hugo Module
 
-首先确保你的项目本身是一个 [Hugo 模块](https://gohugo.io/hugo-modules/use-modules/#initialize-a-new-module)。
+First make sure that your project itself is a [Hugo module](https://gohugo.io/hugo-modules/use-modules/#initialize-a-new-module).
 
-然后将此主题组件添加到你的 `hugo.toml` 配置文件中：
+Then add this theme component to your `hugo.toml` configuration file:
 
 ```toml
 [module]
@@ -69,25 +69,25 @@ path = "github.com/hugo-fixit/FixIt"
 path = "github.com/hugo-fixit/cmpt-translate"
 ```
 
-在 Hugo 的第一次启动时，它将下载所需的文件。
+On the first start of Hugo it will download the required files.
 
-要更新到模块的最新版本，请运行：
+To update to the latest version of the module run:
 
 ```bash
 hugo mod get -u
 hugo mod tidy
 ```
 
-### 作为 Git 子模块安装
+### Install as Git Submodule
 
-将 [FixIt](https://github.com/hugo-fixit) 和此 git 存储库克隆到你的主题文件夹中，并将其作为网站目录的子模块添加。
+Clone [FixIt](https://github.com/hugo-fixit) and this git repository into your theme folder and add it as submodules of your website directory.
 
 ```bash
 git submodule add https://github.com/hugo-fixit/FixIt.git themes/FixIt
 git submodule add https://github.com/hugo-fixit/cmpt-translate.git themes/cmpt-translate
 ```
 
-接下来编辑项目的 `hugo.toml` 并将此主题组件添加到你的主题中：
+Next edit `hugo.toml` of your project and add this theme component to your themes:
 
 ```toml
 theme = [
@@ -96,9 +96,9 @@ theme = [
 ]
 ```
 
-## 配置
+## Configuration
 
-为了通过 FixIt 主题开放的 [自定义块](https://fixit.lruihao.cn/references/blocks/) 将 `cmpt-translate.html` 注入到 `custom-assets` 中，你需要填写以下必要配置：
+In order to Inject the partial `cmpt-translate.html` into the `custom-assets` through the [custom block](https://fixit.lruihao.cn/references/blocks/) opened by the FixIt theme, you need to fill in the following necessary configurations:
 
 ```toml
 [params]
@@ -111,14 +111,14 @@ assets = [ "inject/cmpt-translate.html" ]
 # ... other partials
 ```
 
-另外，你还可以通过以下配置来自定义翻译的语言：
+In addition, you can customize the translated language through the following configuration:
 
 ```toml
 [languages]
 
-[languages.zh-cn]
-languageCode = "zh-CN"
-languageName = "简体中文"
+[languages.en]
+languageCode = "en"
+languageName = "English"
 
 [params]
 
@@ -131,29 +131,28 @@ ignoreClass = []
 ignoreTag = []
 detectLocalLanguage = false
 cdn = ""
-enterprise = false
 ```
 
-- `enable`：是否启用自动翻译。
-- `service`：翻译服务提供商，可选值为 `client.edge` 和 `translate.service`，详见：[翻译服务提供商](https://translate.zvo.cn/43086.html)。
-- `languages`：要翻译到的语言 ID 列表，例如 `["english", "chinese_simplified", "chinese_traditional", ...]`，详见：[完整语言列表](https://api.translate.zvo.cn/language.json)。
-- `ignoreID`：需要忽略翻译的元素 ID，例如 `["comment", ...]`。
-- `ignoreClass`：需要忽略翻译的类名，例如 `["post-category", ...]`。
-- `ignoreTag`：需要忽略翻译的标签，例如 `["title", ...]`。
-- `ignoreText`：需要忽略翻译的文本，例如 `["FixIt", "Lruihao", ...]`。
-- `detectLocalLanguage`：是否检测本地语言。
-- `cdn`：translate.js 的 CDN，例如 `https://cdn.jsdelivr.net/npm/i18n-jsautotranslate@latest`。
-- `enterprise`：是否启用[企业级翻译通道](#enterprise)。
+- `enable`: Whether to enable automatic translation.
+- `service`: The translation service provider, optional values are `client.edge` and `translate.service`, see: [Translation Service Provider](https://translate.zvo.cn/43086.html).
+- `languages`: List of language ID to translate to, e.g. `["english", "chinese_simplified", "chinese_traditional", ...]`, see the full language list: [Full Language List](https://api.translate.zvo.cn/language.json).
+- `ignoreID`: Element IDs that needs to be ignored for translation, e.g. `["comment", ...]`
+- `ignoreClass`: Class names that need to be ignored for translation, e.g. `["post-category", ...]`
+- `ignoreTag`: Tag names that need to be ignored for translation, e.g. `["title", ...]`
+- `ignoreText`: Texts that needs to be ignored for translation, e.g. `["FixIt", "Lruihao", ...]`
+- `detectLocalLanguage`: Whether to detect the local language
+- `cdn`: CDN of translate.js, e.g. `https://cdn.jsdelivr.net/npm/i18n-jsautotranslate@latest`
+- `enterprise`: Whether to use the [enterprise translation channel](#enterprise)
 
 > [!NOTE]
-> 为了避免翻译语言获取失败，即使你的站点本身是单语言的，也需要配置 `languageCode` 和 `languageName`，例如：
+> To avoid translation language acquisition failure, even if your site itself is single-language, you need to configure `languageCode` and `languageName`, for example:
 >
 > ```toml
 > [languages]
 >
 > [languages.zh-cn]
-> languageCode = "zh-CN"
-> languageName = "简体中文"
+> languageCode = "en"
+> languageName = "English"
 > ```
 
 ## Front Matter
@@ -165,13 +164,13 @@ autoTranslate:
   onlyLocalLang: false
 ```
 
-- `local`: `String` 用于指定当前页面的本地语言，例如 `local: english`。
+- `local`: `String` Used to specify the local language of the current page, e.g. `local: english`.
 
-    默认本地语言同 Hugo 站点配置相同，如果某个页面实际语言与站点配置不同，可以通过 `local` 参数指定。
+    The default local language is the same as the Hugo site configuration. If the actual language of a page is different from the site configuration, you can specify it through the `local` parameter.
 
-- `fromLanguages`: `Array` 类型，用于指定当前页面内容中出现的语种是否需要翻译。
+- `fromLanguages`: `Array` type, used to specify whether the languages in the current page content need to be translated.
 
-    例如：网页本身是中文，但是内容中还有其他语言，你可以指定需要翻译的语种，例如：
+    For example: the webpage itself is in Chinese, but there are other languages in the content. You can specify the language to be translated, for example:
 
     ```yaml
     fromLanguages:
@@ -179,13 +178,13 @@ autoTranslate:
       - chinese_traditional
     ```
 
-- `onlyLocalLang`: `Boolean` 类型，用于指定是否只翻译当前页面本地语言，默认为 `false`。
+- `onlyLocalLang`: `Boolean` type, used to specify whether to translate only the local language of the current page, the default is `false`.
 
-    例如：网页本身是中文，但是内容中其他语言的摘要引用，设置 `onlyLocalLang: true` 可以只翻译中文。
+    For example: the webpage itself is in Chinese, but there are summary references in other languages in the content. Set `onlyLocalLang: true` to translate only Chinese.
 
-## 自定义翻译术语
+## Custom Translation Terms
 
-在你的项目目录 `data` 文件夹下创建 `nomenclature.yml` 文件，然后添加自定义翻译术语，例如：
+Create a `nomenclature.yml` file in the `data` folder of your project directory, and then add custom translation terms, for example:
 
 ```yaml
 - from: english
@@ -201,55 +200,55 @@ autoTranslate:
 ```
 
 <!-- markdownlint-disable-next-line MD033 -->
-## 企业级翻译通道 <a id="enterprise"></a>
+## Enterprise Translation Channel <a id="enterprise"></a>
 
-> 企业级稳定翻译通道，仅针对**付费用户**开放。\
-> **体验额度**：每天有 5 万字符的体验额度，超出部分将不再翻译！
+> Enterprise-level stable translation channel, open only to **paying users**.\
+> **Experience quota**: There is a daily experience quota of 50,000 characters, and the excess will no longer be translated!
 
-在 FixIt 里启用企业级翻译通道，设置 `params.autoTranslate.enterprise` 为 `true` 即可，[企业级翻译通道](https://translate.zvo.cn/4087.html)相对于普通翻译通道有以下优势：
+Set `enterprise = true` in the configuration to enable the enterprise translation channel. The [enterprise translation channel](https://translate.zvo.cn/4087.html) has the following advantages over the ordinary translation channel:
 
-| 服务           | 开源翻译通道      | 企业级翻译通道           |
-| :------------- | :---------------- | :----------------------- |
-| 服务端缓存层数 | 1 层 (文件式缓存) | 1 层 (内存 + 文件式缓存) |
-| 翻译响应速度   | 1.5~5 秒          | 0.8~1.5 秒               |
-| 翻译服务器     | 1 台              | >=3 台                   |
-| 网络节点       | 2 个              | >=4 个                   |
-| 翻译通道       | 手动设置          | 自动匹配最优             |
-| 国内缓存节点   | 无                | 有                       |
-| 每日翻译字符   | 200 万            | 5000 万                  |
+| Service                      | Open source translation channel | Enterprise translation channel |
+| :--------------------------- | :------------------------------ | :----------------------------- |
+| Server cache layers          | 1 layer (file cache)            | 1 layer (memory + file cache)  |
+| Translation response speed   | 1.5~5 seconds                   | 0.8~1.5 seconds                |
+| Translation server           | 1                               | >=3                            |
+| Network nodes                | 2                               | >=4                            |
+| Translation channel          | Manual setting                  | Automatically match the best   |
+| Domestic cache nodes         | None                            | Yes                            |
+| Daily translation characters | 2 million                       | 50 million                     |
 
-### 赞助费用
+### Sponsorship fee
 
-考虑到 FixIt 生态受众群体大多为个人用户，因此我（[@Lruihao](https://github.com/Lruihao)）以**个人名义**拿出赞助收入进行补贴。
+Considering that most of the FixIt ecosystem audiences are individual users, I ([@Lruihao](https://github.com/Lruihao)) will use sponsorship income as a subsidy in my **personal name**.
 
 > [!TIP]
-> **FixIt 项目补贴价**：**¥10** ~~_¥50_~~ / 域名 / 月\
-> _到期自动禁用，需要重新赞助续费！_
+> **Subsidy price for FixIt project**: **¥10** ~~_¥50_~~ / domain / month\
+> _Automatically disabled upon expiration, requiring re-sponsorship renewal!_
 
-符合以下性质的可以免费联系我开通企业级翻译通道：
+Those who meet the following requirements can contact me for free to open an enterprise translation channel:
 
-- [translate.js](https://github.com/xnx3/translate) 及相关生态产品的开发者
-- [FixIt](https://github.com/hugo-fixit/FixIt) 及相关生态产品的开发者
+- [translate.js](https://github.com/xnx3/translate) and related ecological product developers
+- [FixIt](https://github.com/hugo-fixit/FixIt) and related ecological product developers
 
-### 赞助方式
+### Sponsorship method
 
-- [微信支付](https://lruihao.cn/images/wechatpay.jpg)
-- [支付宝](https://lruihao.cn/images/alipay.jpg)
+- [WeChat](https://lruihao.cn/images/wechatpay.jpg)
+- [Alipay](https://lruihao.cn/images/alipay.jpg)
 
-选择赞助金额，然后在留言中备注 `AutoTranslate: 你的域名` 即可。
+Choose the donation amount, and then remark `AutoTranslate: your domain name` in the message.
 
-通过以下方式联系作者：
+Contact the author through the following methods:
 
-- 邮箱：`1024#lruihao.cn` (将 `#` 替换为 `@`)
-- 微信：[关注公众号回复“Cell”获取作者微信](https://lruihao.cn/images/qr-wx-mp_s.webp)
+- Email: `1024#lruihao.cn` (replace `#` with `@`)
+- WeChat: [Follow the official account and reply "Cell" to get the author's WeChat](https://lruihao.cn/images/qr-wx-mp_s.webp)
 
-## 致谢
+## Acknowledgements
 
-[translate.js](https://github.com/xnx3/translate) 提供技术支持和赞助[企业级翻译通道](https://translate.zvo.cn/4087.html)。
+[translate.js](https://github.com/xnx3/translate) provides technical support and sponsors [Enterprise Translation Channel](https://translate.zvo.cn/4087.html).
 
 
 ---
 
-> 作者: [hugo-fixit](https://github.com/hugo-fixit)  
-> URL: https://lruihao.cn/projects/hugo-fixit/cmpt-translate/  
+> Author: [hugo-fixit](https://github.com/hugo-fixit)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/hugo-fixit/cmpt-translate/  
 

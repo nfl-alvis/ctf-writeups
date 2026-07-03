@@ -207,6 +207,6 @@ hexo 文章用轻量型标签语言 Markdown 编写
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/hexobuild/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/hexobuild/  
 

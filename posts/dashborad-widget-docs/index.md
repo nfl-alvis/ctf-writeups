@@ -112,6 +112,6 @@ dashboard 组件统一存放目录：
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/dashborad-widget-docs/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/dashborad-widget-docs/  
 

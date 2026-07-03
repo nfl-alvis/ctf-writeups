@@ -48,6 +48,6 @@ FixIt:      1022 commits        82040 ++        103942 --
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/git-summary/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/git-summary/  
 

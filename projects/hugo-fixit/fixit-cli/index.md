@@ -4,49 +4,49 @@
 
 [![NPM version](https://img.shields.io/npm/v/fixit-cli.svg)](https://www.npmjs.com/package/fixit-cli)
 
-👉 中文 | [English](https://raw.githubusercontent.com/hugo-fixit/fixit-cli/refs/heads/main/README.en.md)
+👉 English | [中文](README.md)
 
-🛠️ 一个基于 Node.js 开发的用于 [FixIt](https://github.com/hugo-fixit/FixIt) 站点初始化的脚手架工具。
+🛠️ A node-based tooling for [FixIt](https://github.com/hugo-fixit/FixIt) site initialization.
 
 [![asciicast](https://raw.githubusercontent.com/hugo-fixit/fixit-cli/refs/heads/main/fixit-cli.gif)](https://asciinema.org/a/697494)
 
-## 系统依赖
+## System Requirements
 
 - [Node.js](https://nodejs.org/) (>= 18)
 - [Git](https://git-scm.com/)
-- [Hugo](https://gohugo.io/) 扩展版
+- [Hugo](https://gohugo.io/) Extended
 
-如果你使用 [Hugo 模块](https://gohugo.io/hugo-modules/) 功能加载主题，你还需要安装 [Go](https://go.dev/dl/)。
+If you use the [Hugo Modules](https://gohugo.io/hugo-modules/) feature to load the theme, you will also need to install [Go](https://go.dev/dl/).
 
-## 使用
+## Usage
 
-使用 [`pnpx`](https://pnpm.io/cli/dlx) 或者 [`npx`](https://docs.npmjs.com/cli/v11/commands/npx) 直接运行 `fixit-cli`，创建一个新的 FixIt 项目会非常方便。
+It is very convenient to create a new FixIt project by running `fixit-cli` directly using [`pnpx`](https://pnpm.io/cli/dlx) or [`npx`](https://docs.npmjs.com/cli/v11/commands/npx).
 
-例如，创建一个名为 `my-blog` 的站点：
+For example, create a new site named `my-blog`:
 
 ```bash
 pnpx fixit-cli create my-blog
 ```
 
-当然你也可以全局安装 `fixit-cli`，然后使用 `fixit` 命令。
+Of course, you can also install `fixit-cli` globally and use the `fixit` command.
 
 ```bash
 npm install -g fixit-cli
-# 或者
+# or
 pnpm add -g fixit-cli
-# 或者
+# or
 yarn global add fixit-cli
 ```
 
 ### create
 
-创建一个新的 FixIt 项目。
+Create a new FixIt project.
 
 ```bash
 fixit create [project-name]
 ```
 
-创建一个新的 FixIt 组件。
+Create a new FixIt component.
 
 ```bash
 fixit create component [component-name]
@@ -54,41 +54,41 @@ fixit create component [component-name]
 
 ### split
 
-将 `hugo.toml` 配置文件分割到 `config/_default` 目录。
+Split the `hugo.toml` configuration file into the `config/_default` directory.
 
-分割本地文件：
+Split a local file:
 
 ```bash
 fixit split hugo.toml
 ```
 
-分割远程文件：
+Split a remote file:
 
 ```bash
 fixit split https://raw.githubusercontent.com/hugo-fixit/FixIt/refs/heads/main/hugo.toml
-# 或者
+# or
 fixit split https://gitee.com/lruihao/FixIt/raw/main/hugo.toml
 ```
 
-指定输出目录：
+Specify output directory:
 
 ```bash
 fixit split hugo.toml -o config/development
 ```
 
-分割后转换为 YAML 格式：
+Split and convert to YAML format:
 
 ```bash
 fixit split hugo.toml -y
 ```
 
-获取并拆分 FixIt 最新 release 的配置：
+Fetch and split configuration from the latest FixIt release:
 
 ```bash
 fixit split latest
 ```
 
-获取并拆分最新 release 的配置并转换为 YAML 格式：
+Fetch and split the latest release configuration, then convert to YAML:
 
 ```bash
 fixit split latest -y
@@ -96,21 +96,21 @@ fixit split latest -y
 
 ### toml2yaml
 
-将 TOML 配置文件转换为 YAML 格式，支持单个文件或整个目录。
+Convert TOML configuration files to YAML format, supporting single files or entire directories.
 
-转换单个文件：
+Convert a single file:
 
 ```bash
 fixit toml2yaml hugo.toml
 ```
 
-转换整个目录：
+Convert an entire directory:
 
 ```bash
 fixit toml2yaml config/
 ```
 
-转换后替换原文件（删除 TOML 文件）：
+Convert and replace the original file (delete TOML file):
 
 ```bash
 fixit toml2yaml hugo.toml -r
@@ -119,15 +119,15 @@ fixit toml2yaml config/ -r
 
 ### check
 
-检查 FixIt 主题的最新版本。
+Check the latest version of the FixIt theme.
 
 ```bash
 fixit check
 ```
 
-## 更多帮助
+## Getting Help
 
-获取所有可用命令的帮助信息：
+View all available commands:
 
 ```bash
 pnpx fixit-cli -h
@@ -166,28 +166,28 @@ Commands:
   help [command]              display help for command
 ```
 
-## 开发
+## Development
 
-安装依赖项：
+Install dependencies:
 
 ```bash
 pnpm install
 ```
 
-在开发模式下运行 CLI：
+Run the CLI in development mode:
 
 ```bash
 pnpm start -h
 ```
 
-将包链接/取消链接到全局包目录：
+Link/Unlink the package to/from the global package directory:
 
 ```bash
 pnpm link
 pnpm unlink fixit-cli
 ```
 
-从本地路径全局安装/卸载包：
+Install/uninstall the package globally from a local path:
 
 ```bash
 pnpm add -g path/to/fixit-cli
@@ -196,24 +196,24 @@ pnpm remove -g fixit-cli
 
 ### TODO List
 
-- [ ] `fixit create` 命令在选择模板后增加主题组件选项选择步骤
+- [ ] Add theme component selection options after template selection in `fixit create` command
 
-## 相关项目
+## Related Projects
 
-本 CLI 工具是基于以下项目开发的：
+This CLI tool is developed based on the following projects:
 
 - [FixIt](https://github.com/hugo-fixit/FixIt)
 - [hugo-fixit-starter](https://github.com/hugo-fixit/hugo-fixit-starter)
 - [hugo-fixit-starter1](https://github.com/hugo-fixit/hugo-fixit-starter1)
 - [component-skeleton](https://github.com/hugo-fixit/component-skeleton)
 
-## 作者
+## Author
 
-[Lruihao](https://github.com/Lruihao "在 GitHub 上关注我")
+[Lruihao](https://github.com/Lruihao "Follow me on GitHub")
 
 
 ---
 
-> 作者: [hugo-fixit](https://github.com/hugo-fixit)  
-> URL: https://lruihao.cn/projects/hugo-fixit/fixit-cli/  
+> Author: [hugo-fixit](https://github.com/hugo-fixit)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/hugo-fixit/fixit-cli/  
 

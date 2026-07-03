@@ -156,6 +156,6 @@ const tooltips = Tooltip.initAll('.demo-btn[data-ct-title]')
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/projects/lruihao/cell-tooltip/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/lruihao/cell-tooltip/  
 

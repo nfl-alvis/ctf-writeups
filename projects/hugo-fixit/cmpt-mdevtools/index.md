@@ -52,6 +52,6 @@ In order to Inject the partial `cmpt-mdevtools.html` into the `custom-assets` th
 
 ---
 
-> 作者: [hugo-fixit](https://github.com/hugo-fixit)  
-> URL: https://lruihao.cn/projects/hugo-fixit/cmpt-mdevtools/  
+> Author: [hugo-fixit](https://github.com/hugo-fixit)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/hugo-fixit/cmpt-mdevtools/  
 

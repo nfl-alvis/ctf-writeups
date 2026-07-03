@@ -2,55 +2,55 @@
 
 # CoverView
 
-👉 简体中文说明 | [English README](README.en.md)
+👉 [简体中文说明](README.md) | English README
 
-[![用爱发电](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Lruihao/CoverView)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Lruihao/CoverView)
 
-> 该项目基于原始的 [CoverView](https://github.com/rutikwankhade/CoverView)。
+> This project is based on the original [CoverView](https://github.com/rutikwankhade/CoverView).
 
-现在为你的博客创建封面图片变得非常简单。
+Creating cover images for your blogs is now super easy.
 
 ![cover_169570](https://github.com/user-attachments/assets/8032fecb-4ae4-45b9-9af7-dbed801651d1)
 
-## 💥 变更通知
+## 💥 Change Notice
 
-自 2024 年 03 月 28 日起，已将原始的 CoverView 复刻到我的存储库，并进行了以下更改和增强：
+Forked the original CoverView to my repositories since 2024-03-28, and made the following changes and enhancements:
 
-- 修复了具有图案背景的图像无法下载的问题
-- 修复了无法下载和上传 SVG 格式图标的问题
-- 修复了移动端样式混乱的问题
-- 修复了 `重置所有` 按钮功能异常的问题
-- 添加了 ESLint 支持
-- 添加了 I18n 支持
-- 增强了 Unsplash 图像搜索功能
-- 添加了下载图像格式选择（PNG/JPEG/SVG/Blob），并支持 JPEG 图像质量调整
-- 优化了图像下载速度
-- 优化 Devicons 以多色 SVG 图标显示
-- 添加了更多字体和平台支持
-- 统一了不同主题下下载图像的尺寸
-- 等等...
+- Fixed the problem that images with patterns background cannot be downloaded
+- Fixed the problem of being unable to download and upload images with SVG format icons
+- Fixed mobile style disorder
+- Fixed `Reset All` button function abnormality
+- Added ESLint support
+- Added I18n support
+- Enhanced Unsplash image search feature
+- Added download image format selection (PNG/JPEG/SVG/Blob), and support JPEG image quality adjustment
+- Optimize image download speed
+- Optimize Devicons to be displayed as multi-color SVG icons
+- Added more font and platform support
+- Unify the size of downloaded images for different themes
+- And more ...
 
-## ⚡ 特性
+## ⚡ Features
 
-- 🚀 超快速且易于使用
-- 🌈 7 种不同主题，多种字体
-- 🌠 100+ 开发图标，并提供上传自定义图标选项
-- ✨ 15+ 种不同背景图案
-- 💾 基于博客平台或常用尺寸的封面大小
+- 🚀 super fast and easy to use
+- 🌈 7 different themes, multiple fonts
+- 🌠 100+ dev icons with option to upload custom icon
+- ✨ 15+ different background patterns
+- 💾 Cover size based on blogging platform or frequently used sizes
   - [Hashnode](https://hashnode.com/)
   - [Dev.to](https://dev.to/)
   - [Hugo FixIt](https://github.com/hugo-fixit/FixIt)
   - [稀土掘金](https://juejin.cn/)
 
-## 👩‍💻 开发
+## 👩‍💻 Developing
 
-本项目主要使用以下技术栈：
+This project mainly uses the following technology stack:
 
 - [React 19](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Vite](https://vite.dev/)
 
-1. 下载项目并安装依赖：
+1. Clone the project and install dependencies:
 
     ```shell
     git clone https://github.com/Lruihao/CoverView.git
@@ -58,44 +58,44 @@
     pnpm i
     ```
 
-2. 从 [Unsplash API](https://unsplash.com/developers) 获取访问密钥。
-3. 在 `.env.local` 文件中添加 `REACT_APP_UNSPLASH_ACCESS_KEY` 环境变量。
+2. Get an access key from [Unsplash API](https://unsplash.com/developers).
+3. Add the `REACT_APP_UNSPLASH_ACCESS_KEY` environment variable in the `.env.local` file.
 
-    ```shell
+    ```bash
     # https://unsplash.com/ Access Key
     REACT_APP_UNSPLASH_ACCESS_KEY="your_access_key_here"
     ```
 
-4. 运行以下命令开始项目：
+4. Run the following command to start the project:
 
     ```shell
     pnpm dev
     ```
 
-## 👇 贡献
+## 👇 Contributing
 
-欢迎提交拉取请求。对于重大更改，请先打开一个问题来讨论你想要更改的内容。
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-1. 克隆它 (<https://github.com/Lruihao/CoverView/fork>)
-2. 创建你的功能分支 (`git checkout -b feature/fooBar`)
-3. 提交你的更改 (`git commit -am 'Add some fooBar'`)
-4. 推送到分支 (`git push origin feature/fooBar`)
-5. 创建一个新的拉取请求
+1. Fork it (<https://github.com/Lruihao/CoverView/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
 
-## 🙏 致谢
+## 🙏 Acknowledgments
 
-- [Rutik Wankhade](https://github.com/rutikwankhade)（原始 CoverView）
+- [Rutik Wankhade](https://github.com/rutikwankhade) (original CoverView)
 - [dom-to-image-more](https://github.com/1904labs/dom-to-image-more)
 - [Hero Patterns](https://www.heropatterns.com/)
 - [Devicons](https://github.com/devicons/devicon)
 - [Font Virgil](https://github.com/excalidraw/virgil)
 - [Font MMT](https://github.com/Lruihao/mmt-webfont)
 
-如果你觉得这个项目有用，请别忘了留下一个 ⭐。
+Don't forget to leave a ⭐ if you found this useful.
 
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/projects/lruihao/coverview/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/lruihao/coverview/  
 

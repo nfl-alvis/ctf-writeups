@@ -4,10 +4,10 @@
 <h1 align="center">🎄 Santa Hat | FixIt</h1>
 
 <div align="center" class="ignore">
-  <p>一个 JavaScript 实现的圣诞节小彩蛋。</p>
-  简体中文 |
+  <p>A Christmas Easter Egg by JavaScript.</p>
+  <a href="https://raw.githubusercontent.com/hugo-fixit/cmpt-santa-hat/refs/heads/main/README.md">简体中文</a> |
   <a href="https://fixit.lruihao.cn/zh-cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=chinese_traditional">繁體中文</a> |
-  <a href="https://raw.githubusercontent.com/hugo-fixit/cmpt-santa-hat/refs/heads/main/README.en.md">English</a> |
+  English |
   <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=french">Français</a> |
   <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=russian">Русский язык</a> |
   <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=spanish">Español</a> |
@@ -17,27 +17,27 @@
   <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=japanese">日本語</a>
 </div>
 
-## 特性
+## Features
 
 ![santa-hat](https://github.com/user-attachments/assets/6cf191ca-1455-46ae-a939-6539a2143c4d)
 
-- 🎅 自动在圣诞节期间（12 月 20 日至 26 日）为网站 Logo 添加圣诞帽装饰
-- 🎯 自动检测当前日期，无需手动开关
-- 💫 轻量级实现，不影响网站性能
+- 🎅 Automatically adds Santa hat decoration to site logos during Christmas season (December 20-26)
+- 🎯 Automatic date detection, no manual toggling required
+- 💫 Lightweight implementation with no performance impact
 
-## 要求
+## Requirements
 
-- FixIt v0.4.0 或更高版本。
+- FixIt v0.4.0 or later.
 
-## 安装组件
+## Install Component
 
-安装方式与 [安装主题](https://fixit.lruihao.cn/zh-cn/documentation/installation/) 相同，有多种安装方式，任选一种即可，这里介绍两种主流方式。
+The installation method is the same as [installing a theme](https://fixit.lruihao.cn/documentation/installation/). There are several ways to install, choose one, Here are two mainstream ways.
 
-### 作为 Hugo 模块安装
+### Install as Hugo Module
 
-首先确保你的项目本身是一个 [Hugo 模块](https://gohugo.io/hugo-modules/use-modules/#initialize-a-new-module)。
+First make sure that your project itself is a [Hugo module](https://gohugo.io/hugo-modules/use-modules/#initialize-a-new-module).
 
-然后将此主题组件添加到你的 `hugo.toml` 配置文件中：
+Then add this theme component to your `hugo.toml` configuration file:
 
 ```toml
 [module]
@@ -49,33 +49,33 @@ path = "github.com/hugo-fixit/FixIt"
 path = "github.com/hugo-fixit/cmpt-santa-hat"
 ```
 
-在 Hugo 的第一次启动时，它将下载所需的文件。
+On the first start of Hugo it will download the required files.
 
-要更新到模块的最新版本，请运行：
+To update to the latest version of the module run:
 
 ```bash
 hugo mod get -u
 hugo mod tidy
 ```
 
-### 作为 Git 子模块安装
+### Install as Git Submodule
 
-将 [FixIt](https://github.com/hugo-fixit/FixIt) 和此 git 存储库克隆到你的主题文件夹中，并将其作为网站目录的子模块添加。
+Clone [FixIt](https://github.com/hugo-fixit/FixIt) and this git repository into your theme folder and add it as submodules of your website directory.
 
 ```bash
 git submodule add https://github.com/hugo-fixit/FixIt.git themes/FixIt
 git submodule add https://github.com/hugo-fixit/cmpt-santa-hat.git themes/cmpt-santa-hat
 ```
 
-接下来编辑项目的 `hugo.toml` 并将此主题组件添加到你的主题中：
+Next edit `hugo.toml` of your project and add this theme component to your themes:
 
 ```toml
 theme = ["FixIt", "cmpt-santa-hat"]
 ```
 
-## 配置
+## Configuration
 
-为了通过 FixIt 主题在 `layouts/_partials/custom.html` 文件中开放的 [自定义块](https://fixit.lruihao.cn/references/blocks/) 将 `santa-hat.fixit.html` 注入到 `custom-assets` 中，你需要填写以下必要配置：
+In order to Inject the partial `santa-hat.fixit.html` into the `custom-assets` through the [custom block](https://fixit.lruihao.cn/references/blocks/) opened by the FixIt theme in the `layouts/_partials/custom.html` file, you need to fill in the following necessary configurations:
 
 ```toml
 [params]
@@ -88,23 +88,23 @@ assets = [
 # ... other partials
 ```
 
-## 样式控制
+## Styling
 
-- Logo 尺寸推荐：32x32 像素。
-- CSS 变量：
-  - `--fi-santa-hat-offset`：控制圣诞帽相对于 Logo 的平移偏移，默认值 `8px 2px`。
-  - `--fi-santa-hat-shadow`：控制帽子阴影的 RGB 值，默认值 `0, 0, 0`，暗色模式下会自动切换为 `255, 255, 255`。
+- Recommended logo size: 32x32 pixels.
+- CSS variables:
+  - `--fi-santa-hat-offset`: Controls hat translation relative to the logo, default `8px 2px`.
+  - `--fi-santa-hat-shadow`: Controls hat shadow RGB values, default `0, 0, 0`; automatically switches to `255, 255, 255` in dark mode.
 
-<!-- 
-## 参考
+<!--
+## References
 
-- [开发主题组件 | FixIt](https://fixit.lruihao.cn/contributing/components/)
-- [如何开发 Hugo 主题组件 | FixIt](https://fixit.lruihao.cn/components/dev-component/)
+- [Develop Theme Components | FixIt](https://fixit.lruihao.cn/contributing/components/)
+- [How to Develop a Hugo Theme Component | FixIt](https://fixit.lruihao.cn/components/dev-component/)
 -->
 
 
 ---
 
-> 作者: [hugo-fixit](https://github.com/hugo-fixit)  
-> URL: https://lruihao.cn/projects/hugo-fixit/cmpt-santa-hat/  
+> Author: [hugo-fixit](https://github.com/hugo-fixit)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/hugo-fixit/cmpt-santa-hat/  
 

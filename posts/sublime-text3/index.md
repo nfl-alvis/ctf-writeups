@@ -100,6 +100,6 @@ Sublime Text3 快捷键一览表
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/sublime-text3/  
-> 转载 URL: https://www.cnblogs.com/rudong/p/7889114.html
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/sublime-text3/  
+> Repost URL: https://www.cnblogs.com/rudong/p/7889114.html

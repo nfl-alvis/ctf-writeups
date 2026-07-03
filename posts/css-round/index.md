@@ -175,6 +175,6 @@ MDN 官方写了一个完整的例子，可以看 [Playground | MDN](https://dev
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/css-round/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/css-round/  
 

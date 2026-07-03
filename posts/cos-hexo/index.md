@@ -180,6 +180,6 @@ exports.main_handler = async (event, context, callback) => {
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/cos-hexo/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/cos-hexo/  
 

@@ -122,6 +122,6 @@ Like this.
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/translation-guide/  
-> 转载 URL: https://github.com/mdn/translated-content/blob/main/docs/zh-cn/translation-guide.md
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/translation-guide/  
+> Repost URL: https://github.com/mdn/translated-content/blob/main/docs/zh-cn/translation-guide.md

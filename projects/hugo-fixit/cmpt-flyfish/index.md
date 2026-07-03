@@ -2,27 +2,27 @@
 
 # Fly Fish
 
-👉 简体中文说明 | [English README](https://raw.githubusercontent.com/hugo-fixit/cmpt-flyfish/refs/heads/main/README.en.md)
+👉 English README | [简体中文说明](https://raw.githubusercontent.com/hugo-fixit/cmpt-flyfish/refs/heads/main/README.en.md)
 
-一个 canvas 实现的小鱼游动动画效果。
+A canvas implementation of a small fish swimming animation effect.
 
 ## Demo
 
 <https://lruihao.cn>
 
-## 要求
+## Requirements
 
-- FixIt v0.4.0 或更高版本。
+- FixIt v0.4.0 or later.
 
-## 安装组件
+## Install Component
 
-安装方法与 [安装主题](https://fixit.lruihao.cn/zh-cn/documentation/installation/) 相同。有几种安装方式，请选择一种，例如，通过 Hugo 模块安装：
+The installation method is the same as [installing a theme](https://fixit.lruihao.cn/documentation/installation/). There are several ways to install, choose one, for example, install through Hugo Modules:
 
-### 作为 Hugo 模块安装
+### Install as Hugo Module
 
-首先确保你的项目本身是一个 [Hugo 模块](https://gohugo.io/hugo-modules/use-modules/#initialize-a-new-module)。
+First make sure that your project itself is a [Hugo module](https://gohugo.io/hugo-modules/use-modules/#initialize-a-new-module).
 
-然后将此主题组件添加到你的 `hugo.toml` 配置文件中：
+Then add this theme component to your `hugo.toml` configuration file:
 
 ```toml
 [module]
@@ -32,33 +32,33 @@
     path = "github.com/hugo-fixit/cmpt-flyfish"
 ```
 
-在 Hugo 的第一次启动时，它将下载所需的文件。
+On the first start of Hugo it will download the required files.
 
-要更新到模块的最新版本，请运行：
+To update to the latest version of the module run:
 
 ```bash
 hugo mod get -u
 hugo mod tidy
 ```
 
-### 作为 Git 子模块安装
+### Install as Git Submodule
 
-将 [FixIt](https://github.com/hugo-fixit/FixIt) 和此 git 存储库克隆到你的主题文件夹中，并将其作为网站目录的子模块添加。
+Clone [FixIt](https://github.com/hugo-fixit/FixIt) and this git repository into your theme folder and add it as submodules of your website directory.
 
 ```bash
 git submodule add https://github.com/hugo-fixit/FixIt.git themes/FixIt
 git submodule add https://github.com/hugo-fixit/cmpt-flyfish.git themes/cmpt-flyfish
 ```
 
-接下来编辑项目的 `hugo.toml` 并将此主题组件添加到你的主题中：
+Next edit `hugo.toml` of your project and add this theme component to your themes:
 
 ```toml
 theme = ["FixIt", "cmpt-flyfish"]
 ```
 
-## 配置
+## Configuration
 
-为了通过 FixIt 主题在 `layouts/_partials/custom.html` 文件中开放的 [自定义块](https://fixit.lruihao.cn/references/blocks/) 将 `cmpt-flyfish.html` 注入到 `custom-assets` 中，你需要填写以下必要配置：
+In order to Inject the partial `cmpt-flyfish.html` into the `custom-assets` through the [custom block](https://fixit.lruihao.cn/references/blocks/) opened by the FixIt theme in the `layouts/_partials/custom.html` file, you need to fill in the following necessary configurations:
 
 ```toml
 [params]
@@ -68,7 +68,7 @@ theme = ["FixIt", "cmpt-flyfish"]
     # ... other partials
 ```
 
-配置小鱼主题色，并启用动画：
+Configuration of the Fly Fish theme color and enable animation:
 
 ```toml
 [params]
@@ -78,14 +78,14 @@ theme = ["FixIt", "cmpt-flyfish"]
     dark = "rgb(255 255 255 / 10%)"
 ```
 
-## 参考
+## References
 
-- [开发主题组件 | FixIt](https://fixit.lruihao.cn/contributing/components/)
-- [如何开发 Hugo 主题组件 | FixIt](https://fixit.lruihao.cn/components/dev-component/)
+- [Develop Theme Components | FixIt](https://fixit.lruihao.cn/contributing/components/)
+- [How to Develop a Hugo Theme Component | FixIt](https://fixit.lruihao.cn/components/dev-component/)
 
 
 ---
 
-> 作者: [hugo-fixit](https://github.com/hugo-fixit)  
-> URL: https://lruihao.cn/projects/hugo-fixit/cmpt-flyfish/  
+> Author: [hugo-fixit](https://github.com/hugo-fixit)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/hugo-fixit/cmpt-flyfish/  
 

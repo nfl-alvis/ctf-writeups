@@ -29,6 +29,6 @@ _戊戌年腊月廿七于家中。_
 
 ---
 
-> 作者: [杨灿](mailto:1845280636@qq.com)  
-> URL: https://lruihao.cn/posts/renative/  
+> Author: [杨灿](mailto:1845280636@qq.com)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/renative/  
 

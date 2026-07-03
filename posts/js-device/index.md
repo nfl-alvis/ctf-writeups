@@ -88,6 +88,6 @@ function isWeiXin(){
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/js-device/  
-> 转载 URL: https://www.cnblogs.com/coober/p/6594379.html
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/js-device/  
+> Repost URL: https://www.cnblogs.com/coober/p/6594379.html

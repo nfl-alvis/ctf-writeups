@@ -2,23 +2,23 @@
 
 # auto-changelog-plus
 
-中文 | [English](https://raw.githubusercontent.com/Lruihao/auto-changelog-plus/refs/heads/main./README.en.md)
+[中文](https://raw.githubusercontent.com/Lruihao/auto-changelog-plus/refs/heads/main./README.md) | English
 
-从 git 提交历史自动生成 changelog 的命令行工具。
+A command line tool to generate changelogs from git commit history automatically.
 
-> 基于 [auto-changelog](https://github.com/CookPete/auto-changelog) 和 [约定式提交](https://www.conventionalcommits.org/zh-hans/v1.0.0/) 规范。
+> Based on [auto-changelog](https://github.com/CookPete/auto-changelog) and [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
 
 [![npm version](https://img.shields.io/npm/v/auto-changelog-plus.svg)](https://www.npmjs.com/package/auto-changelog-plus)
 
-## 📦 安装
+## 📦 Installation
 
 ```bash
 npm install -g auto-changelog-plus
 ```
 
-## 🚀 用法
+## 🚀 Usage
 
-在 git 仓库根目录运行 `auto-changelog-plus` 或者 `acp`。工具会在后台运行 `git log` 来解析提交历史。
+Run `auto-changelog-plus` or `acp` in the root directory of your git repository. The tool will run `git log` behind the scenes to parse the commit history.
 
 ```bash
 Usage: auto-changelog-plus [options]
@@ -61,54 +61,54 @@ Options:
   -h, --help                          # output usage information
 ```
 
-以下是一些常见的使用示例：
+Here are some common usage examples:
 
 ```bash
-# 在当前目录写入日志到 CHANGELOG.md
+# Write changelog to CHANGELOG.md in current directory
 auto-changelog-plus
 
-# 使用 keepachangelog 模板写入日志到 HISTORY.md
+# Write changelog to HISTORY.md using keepachangelog template
 auto-changelog-plus --output HISTORY.md --template keepachangelog
 
-# 禁用提交限制，渲染每个发布的所有提交
+# Disable commit limit to render all commits for each release
 auto-changelog-plus --commit-limit false
 ```
 
-> 执行 `auto-changelog-plus -h` 获取帮助或者参考 [auto-changelog](https://github.com/cookpete/auto-changelog) 文档。
+> Run `auto-changelog-plus -h` for help or refer to the [auto-changelog](https://github.com/cookpete/auto-changelog) documentation.
 
-## 📝 约定式提交
+## 📝 Conventional Commits
 
-基于 [约定式提交](https://www.conventionalcommits.org/zh-hans/v1.0.0/) 规范，支持以下类型的提交：
+Based on the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification, supports the following commit types:
 
-- `feat:` 新功能
-- `fix:` 修复问题
-- `perf:` 性能优化
-- `refactor:` 代码重构
-- `docs:` 文档变更
-- `test:` 测试相关
-- `style:` 代码格式调整
-- `chore:` 构建过程或辅助工具的变动
-- `build:` 构建系统变动
-- `ci:` 持续集成配置变动
-- `revert:` 代码回滚
-- 支持 scope：`feat(api):`, `fix(ui):` 等
-- 支持 emoji：`:sparkles: feat:`, `✨ feat:` 等
-- 支持 Breaking Changes：`feat!:`, `feat(scope)!:`, `BREAKING CHANGE:` 等格式
-- 自动忽略 WIP 提交：`wip:`, `Wip:` 等临时提交不会包含在变更日志中
+- `feat:` New features
+- `fix:` Bug fixes
+- `perf:` Performance improvements
+- `refactor:` Code refactoring
+- `docs:` Documentation changes
+- `test:` Test-related changes
+- `style:` Code formatting adjustments
+- `chore:` Build process or auxiliary tool changes
+- `build:` Build system changes
+- `ci:` Continuous integration configuration changes
+- `revert:` Code rollbacks
+- Supports scope: `feat(api):`, `fix(ui):`, etc.
+- Supports emoji: `:sparkles: feat:`, `✨ feat:`, etc.
+- Supports Breaking Changes: `feat!:`, `feat(scope)!:`, `BREAKING CHANGE:`, etc.
+- Automatically ignores WIP commits: `wip:`, `Wip:`, etc. temporary commits will not be included in the changelog
 
-## ⚙️ 自动化使用
+## ⚙️ Automated Usage
 
-将 `auto-changelog-plus` 安装到开发依赖：
+Install `auto-changelog-plus` as a development dependency:
 
 ```bash
 npm install auto-changelog-plus --save-dev
-# 或
+# or
 yarn add auto-changelog-plus --dev
-# 或
+# or
 pnpm add -D auto-changelog-plus
 ```
 
-在你的 `package.json` 的 `version` 脚本中添加 `auto-changelog-plus -p && git add CHANGELOG.md`：
+Add `auto-changelog-plus -p && git add CHANGELOG.md` to your `version` script in `package.json`:
 
 ```json
 {
@@ -123,17 +123,19 @@ pnpm add -D auto-changelog-plus
 }
 ```
 
-使用 `-p` 或 `--package` 将 `package.json` 中的 `version` 用作最新发布，这样以前发布和现在之间的所有提交都成为该发布的一部分。基本上任何通常被解析为 `Unreleased` 的内容现在都会出现在 `package.json` 的 `version` 下。
+Using `-p` or `--package` uses the `version` from `package.json` as the latest release, so all commits between previous releases and now become part of that release. Basically anything that would normally be parsed as `Unreleased` will now appear under the `version` from `package.json`.
 
-现在每次运行 [npm version](https://docs.npmjs.com/cli/version) 时，changelog 将自动更新并成为版本提交的一部分。在不是 NPM 包的项目中，可以使用 `npx` 或 `pnpx` 来运行 `auto-changelog-plus`，例如：
+Now every time you run [npm version](https://docs.npmjs.com/cli/version), the changelog will be automatically updated and become part of the version commit.
+
+For projects that are not NPM packages, you can use `npx` or `pnpx` to run `auto-changelog-plus`, for example:
 
 ```bash
 npx auto-changelog-plus
-# 或
+# or
 pnpx auto-changelog-plus
 ```
 
-在 GitHub Actions 中，你可以使用以下工作流来自动生成发布说明：
+In GitHub Actions, you can use the following workflow to automatically generate release notes:
 
 ```yaml
 name: Release for new tag
@@ -170,9 +172,9 @@ jobs:
           body_path: CHANGELOG.md
 ```
 
-## 👤 配置作者映射（可选）
+## 👤 Configure Author Mapping (Optional)
 
-在 `package.json` 中的 `auto-changelog-plus` 字段中配置 `authorMap`，可以将 git 提交的作者名称映射到 GitHub 用户名。这在生成包含 GitHub 链接的 Changelog 时非常有用。
+You can configure `authorMap` in the `auto-changelog-plus` field in `package.json` to map git commit author names to GitHub usernames. This is very useful when generating Changelogs with GitHub links.
 
 ```json
 {
@@ -180,32 +182,32 @@ jobs:
   "version": "1.0.0",
   "auto-changelog-plus": {
     "authorMap": {
-      "提交作者名": "GitHub 用户名",
+      "Commit Author Name": "GitHub Username",
       "Cell": "Lruihao"
     }
   }
 }
 ```
 
-## 🔄 和 auto-changelog 的区别
+## 🔄 Differences from auto-changelog
 
-`auto-changelog-plus` 是 `auto-changelog` 的上层封装，完全兼容 `auto-changelog` 的所有用法和配置。
+`auto-changelog-plus` is a wrapper around `auto-changelog`, fully compatible with all usage and configurations of `auto-changelog`.
 
-主要改进：
+Main improvements:
 
-- **优化默认模板**：更好地适配 **约定式提交** 规范
-- **调整默认配置**：提供更合理的开箱即用体验
-- **扩展模板功能**：提供额外的模板辅助函数
+- **Optimized default template**: Better adapted to the **Conventional Commits** specification
+- **Adjusted default configuration**: Provides a more reasonable out-of-the-box experience
+- **Extended template functionality**: Provides additional template helper functions
 
-如果你正在使用 `auto-changelog`，可以直接替换为 `auto-changelog-plus`，无需修改任何配置。
+If you are using `auto-changelog`, you can directly replace it with `auto-changelog-plus` without modifying any configuration.
 
-## 📄 许可证
+## 📄 License
 
 MIT
 
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/projects/lruihao/auto-changelog-plus/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/lruihao/auto-changelog-plus/  
 

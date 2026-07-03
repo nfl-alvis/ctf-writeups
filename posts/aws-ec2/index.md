@@ -162,6 +162,6 @@ scp -r /path/to/public root@3.85.xxx.xxx:/www/wwwroot/hugo
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/aws-ec2/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/aws-ec2/  
 

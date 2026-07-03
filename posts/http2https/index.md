@@ -31,6 +31,6 @@ if (window.location.host == host && window.location.protocol != targetProtocol){
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/http2https/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/http2https/  
 

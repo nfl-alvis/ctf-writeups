@@ -55,6 +55,6 @@ int get_lcm(int a,int b)///获得最小公倍数
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/gcd-bit/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/gcd-bit/  
 

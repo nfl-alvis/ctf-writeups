@@ -128,6 +128,6 @@ Customize configuration see [Configuration Reference](https://cli.vuejs.org/conf
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/projects/lruihao/el-table-sticky/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/lruihao/el-table-sticky/  
 

@@ -240,6 +240,6 @@ jQuery lightbox script for displaying images, videos and more. Touch enabled, re
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/lightbox/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/lightbox/  
 

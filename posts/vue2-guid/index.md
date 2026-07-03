@@ -39,6 +39,6 @@
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/posts/vue2-guid/  
-> 转载 URL: https://zhuanlan.zhihu.com/p/23134551
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/posts/vue2-guid/  
+> Repost URL: https://zhuanlan.zhihu.com/p/23134551

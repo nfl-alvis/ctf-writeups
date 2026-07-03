@@ -92,6 +92,6 @@ cwebp -q 50 -lossless cover_*.png -o cover_lossless.webp
 
 ---
 
-> 作者: [Lruihao](https://github.com/Lruihao)  
-> URL: https://lruihao.cn/projects/coverview/  
+> Author: [Lruihao](https://github.com/Lruihao)  
+> URL: https://nfl-alvis.github.io/ctf-writeups/projects/coverview/  
 
