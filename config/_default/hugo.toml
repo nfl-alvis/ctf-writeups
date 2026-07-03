@@ -11,7 +11,7 @@ baseURL = "https://nfl-alvis.github.io/ctf-writeups/"
 # theme = ["FixIt"] # enable in your site config file
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "en"
-disableLanguages = ["en", "zh-tw"]
+disableLanguages = ["zh-cn", "zh-tw"]
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = true
 # copyright description used only for seo schema
