@@ -25,7 +25,7 @@ jobs:
           git config --global user.name "Lruihao"
           git config --global user.email "1024@lruihao.cn"
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
