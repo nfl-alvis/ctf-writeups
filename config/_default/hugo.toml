@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------------------
 
 # website title
-title = "菠菜眾長"
+title = "SPAWN2PWN"
 # Hostname (and path) to the root
-baseURL = "http://localhost:1313"
+baseURL = "https://nfl-alvis.github.io/ctf-writeups/"
 # theme list
 # theme = ["FixIt"] # enable in your site config file
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
-defaultContentLanguage = "zh-cn"
+defaultContentLanguage = "en"
 disableLanguages = ["en", "zh-tw"]
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = true
