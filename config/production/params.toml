@@ -52,7 +52,7 @@ inputPosition = "bottom"
 lang = "en"
 lightTheme = "light"
 darkTheme = "dark"
-lazyLoad = true
+lazyLoad = false
 
 # FixIt 0.3.10 | NEW Busuanzi count
 [busuanzi]
