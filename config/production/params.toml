@@ -38,18 +38,20 @@ commentCount = true # FixIt NEW | 0.2.13
 # FixIt 0.2.14 | NEW Giscus comments config (https://giscus.app/)
 [page.comment.giscus]
 enable = true
-repo = "Lruihao/hugo-blog"
-repoId = "MDEwOlJlcG9zaXRvcnk0MDQzNDY3MDk="
-category = "General"
-categoryId = "DIC_kwDOGBnXVc4CApHL"
-mapping = "title"
-strict = "0" # FixIt NEW | 0.2.18
+repo = "nfl-alvis/ctf-writeups"
+repoId = "R_kgDOTMiuDQ"
+category = "Announcements"
+categoryId = "DIC_kwDOTMiuDc4DAjbW"
+mapping = "pathname"
+origin = "https://giscus.app"
+strict = "0"
 term = ""
 reactionsEnabled = "1"
 emitMetadata = "0"
-inputPosition = "top" # ["top", "bottom"]
+inputPosition = "bottom"
+lang = "en"
 lightTheme = "light"
-darkTheme = "dark_dimmed"
+darkTheme = "dark"
 lazyLoad = true
 
 # FixIt 0.3.10 | NEW Busuanzi count
