@@ -6,9 +6,9 @@
 # FixIt theme version
 version = "0.4.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
 # site description
-description = "Hugo FixIt 作者，喜欢瞎折腾、造轮子、写东西，分享一些前端开发中的所见、所闻、所思。"
+description = "Personal CTF writeups and cybersecurity notes."
 # site keywords
-keywords = ["李瑞豪", "李瑞豪的博客", "菠菜眾長", "博採眾長", "Lruihao", "Cell", "Hugo FixIt"]
+keywords = ["SPAWN2PWN", "CTF", "writeups", "cybersecurity", "security"]
 # site default theme ["light", "dark", "auto"]
 defaultTheme = "auto"
 # which hash function used for SRI, when empty, no SRI is used
@@ -17,7 +17,7 @@ fingerprint = ""
 # date format
 dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
-images = ["/images/apple-devices-preview.webp"]
+images = ["/ctf-writeups/images/apple-devices-preview.webp"]
 # FixIt 0.2.12 | NEW enable PWA
 enablePWA = true
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
@@ -45,15 +45,15 @@ disableThemeInject = false
 
 # Author Configuration
 [author]
-name = "Lruihao"
-email = "1024@lruihao.cn"
-link = "https://github.com/Lruihao"
-avatar = "/images/avatar.jpg"
+name = "spawn2pwn"
+email = "spawn2pwn@gmail.com"
+link = "https://github.com/nfl-alvis"
+avatar = "/images/IdaWin.png"
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
 # e.g. "https://github.com/hugo-fixit/docs"
-repo = "https://github.com/Lruihao/hugo-blog"
+repo = "https://github.com/nfl-alvis/ctf-writeups"
 branch = "docs"
 # the content directory path relative to the root of the repository
 dir = "content"
@@ -64,7 +64,7 @@ issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0
 # App icon config
 [app]
 # optional site title override for the app when added to an iOS home screen or Android launcher
-title = "菠菜眾長"
+title = "spawn2pwn"
 # whether to omit favicon resource links
 noFavicon = false
 # modern SVG favicon to use in place of older style .png and .ico files
@@ -139,9 +139,8 @@ mobileMode = "auto"
 # Header title config
 [header.title]
 # URL of the LOGO
-logo = "/logo.webp"
+# logo = "/logo.webp"
 # title name
-name = "菠菜众长"
 # you can add extra information before the name (HTML format is supported), such as icons
 pre = ""
 # you can add extra information after the name (HTML format is supported), such as icons
@@ -152,7 +151,7 @@ typeit = false
 # FixIt 0.2.12 | NEW Header subtitle config
 [header.subtitle]
 # subtitle name
-name = "李瑞豪的博客"
+# name = "CTF Writeups"
 # whether to use typeit animation for subtitle name
 typeit = false
 
@@ -180,26 +179,26 @@ copyright = true
 # whether to show the author
 author = true
 # Site creation year
-since = 2018
+since = 2025
 # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
 gov = ""
 # ICP info only in China (HTML format is supported)
 icp = ""
 # license info (HTML format is supported)
-license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
+# license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
 
 # FixIt 0.3.0 | NEW whether to show Hugo and theme info
 [footer.powered]
 enable = true
-hugoLogo = true
-themeLogo = true
+hugoLogo = false
+themeLogo = false
 
 # FixIt 0.2.17 | CHANGED Site creation time
 [footer.siteTime]
-enable = true
+enable = false
 animate = true
 icon = "fa-solid fa-heartbeat"
-pre = "博客已运行"
+pre = "Site running for"
 value = "2018-05-28T20:01:01+08:00"
 # e.g. "2021-12-18T16:15:22+08:00"
 
@@ -273,13 +272,13 @@ onlyFirstPage = false
 # Gravatar Email for preferred avatar in home page
 gravatarEmail = ""
 # URL of avatar shown in home page, default is author's avatar
-avatarURL = "/images/avatar.jpg"
+avatarURL = "/ctf-writeups/images/IdaWin.png"
 # FixIt 0.2.17 | NEW identifier of avatar menu link
 avatarMenu = "about"
 # title shown in home page (HTML format is supported)
-title = "Lruihao's Note"
+title = "spawn2pwn"
 # subtitle shown in home page (HTML format is supported)
-subtitle = "不怕萬人阻擋，只怕自己投降"
+subtitle = "Cybersecurity Enthusiast"
 # whether to use typeit animation for subtitle
 typeit = true
 # whether to show social links
@@ -295,10 +294,10 @@ paginate = 10
 
 # FixIt 0.2.16 | CHANGED Social config about the author
 [social]
-GitHub = "Lruihao"
-Weibo = "liahao"
-Email = "1024@lruihao.cn"
-RSS = true
+GitHub = "nfl-alvis"
+# Weibo = ""
+Email = "spawn2pwn@gmail.com"
+RSS = false
 Linkedin = ""
 Twitter = ""
 Instagram = ""
@@ -389,7 +388,7 @@ Phone = ""
 id = "qr-wx-mp_s.webp"
 weight = 20
 Template = "https://lruihao.cn/images/%v"
-Title = "加我微信：关注公众号回复“Cell”"
+Title = "WeChat"
 
 [social.weixin.icon]
 Class = "fa-brands fa-weixin fa-fw"
@@ -478,9 +477,9 @@ selector = "article" # FixIt 0.2.17 | NEW
 [watermark]
 enable = true
 # watermark's text (HTML format is supported)
-content = '<img style="height: 0.85rem;" src="/logo.webp" alt="logo" /> 李瑞豪'
+content = '@spawn2pwn'
 # watermark's transparency
-opacity = 0.0125
+opacity = 0.1
 # watermark's width. unit: px
 width = 150
 # watermark's height. unit: px
@@ -492,14 +491,14 @@ colSpacing = 30
 # watermark's tangent angle. unit: deg
 rotate = 15
 # watermark's fontSize. unit: rem
-fontSize = 1.1
+fontSize = 0.85
 # FixIt 0.2.13 | NEW watermark's fontFamily
-fontFamily = "MMT_LRH,沐目体"
+fontFamily = "inherit"
 
 # FixIt 0.3.10 | NEW Busuanzi count
 [busuanzi]
 # whether to enable busuanzi count
-enable = false
+enable = true
 # busuanzi count core script source. Default is https://vercount.one/js
 source = "https://vercount.one/js"
 # whether to show the site views
@@ -520,9 +519,9 @@ sogou = ""
 # Site SEO config
 [seo]
 # image URL
-image = "/images/apple-devices-preview.webp"
+image = "/ctf-writeups/images/apple-devices-preview.webp"
 # thumbnail URL
-thumbnailUrl = "/images/tn.webp"
+thumbnailUrl = "/ctf-writeups/images/tn.webp"
 
 # Analytics config
 [analytics]
@@ -599,7 +598,7 @@ objectFit = false
 [githubCorner]
 enable = true
 permalink = "https://github.com/Lruihao/hugo-blog"
-title = "在 GitHub 上查看源码，订阅请点 Watch~"
+title = "View source on GitHub"
 position = "right" # ["left", "right"]
 
 # FixIt 0.2.14 | NEW Gravatar config
@@ -659,31 +658,31 @@ fill = ""
 backgroundColor = "#6a64d5"
 upLoadWeb = true
 showInviteLink = true
-userTitle = "Cell+"
-userDesc = "如果你对网站的内容有任何疑问，可以来问我哦～"
+userTitle = "SPAWN2PWN"
+userDesc = "Ask about this site or the writeups."
 # dom container to be blacked out, e.g. [".aplayer"]
 blackDom = []
 # Only for iframe mode
 frameWidth = "" # e.g. "375px"
 frameHeight = "" # e.g. "600px"
 # only for magic mode
-userIcon = "/images/avatar.jpg"
+userIcon = "/ctf-writeups/images/avatar.jpg"
 defaultChatQuestions = [
-  "你是谁?",
-  "Lruihao 是谁?",
-  "作者的开源项目有哪些？",
+  "What is this site?",
+  "What are the latest writeups?",
+  "Where is the source code?",
 ]
 defaultSearchQuestions = [
-  "给你的 Markdown 挑挑刺",
-  "中文技术文档的写作规范",
-  "语义版本控制（SemVer）",
-  "Vue.js 相关的文章",
-  "FixIt 相关的文档",
-  "现代 CSS 解决方案",
-  "拖拽式仪表盘系列 ",
-  "程序猿的自我修养",
-  "CSS 奇技淫巧",
-  "作者的随笔",
+  "CTF writeups",
+  "Web exploitation",
+  "Reverse engineering",
+  "Cryptography",
+  "Forensics",
+  "Pwn",
+  "Misc challenges",
+  "Linux notes",
+  "Tooling",
+  "Security research",
 ]
 # FixIt 0.4.0 | NEW
 hotWords = true
@@ -772,9 +771,7 @@ boxed = true
 # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
 [customPartials]
 head = [
-  "inject/component-projects.html",
   "inject/fixit-docs-bookmark.html",
-  "inject/shortcode-rewards.html",
   "inject/cmpt-post-preview.html",
   "custom/page-style.html",
 ]
@@ -868,8 +865,8 @@ wordCount = true
 # FixIt 0.2.17 | NEW whether to enable readingTime
 readingTime = true
 # FixIt 0.2.17 | NEW end of post flag
-# endFlag = "（本文完）"
-endFlag = "「本文完，更多内容汇总在我的 GitHub，持续更新，求关注、求 star、求订阅！」"
+# endFlag = "End"
+endFlag = ""
 # FixIt 0.2.18 | NEW whether to enable instant.page
 instantPage = true
 # FixIt 0.3.0 | NEW whether to enable collection list at the sidebar
@@ -1020,22 +1017,6 @@ position = [
   "footer"
 ]
 
-# FixIt 0.2.17 | NEW Donate (Sponsor) settings
-[page.reward]
-enable = true
-animation = true
-# position relative to post footer, optional values: ["before", "after"]
-position = "before"
-comment = "Buy me a coffee~"
-# FixIt 0.2.18 | NEW display mode of QR code images, optional values: ["static", "fixed"], default: `static`
-mode = "fixed"
-
-[page.reward.ways]
-wechatpay = "/images/wechatpay.jpg"
-alipay = "/images/alipay.jpg"
-# paypal = "/images/paypal.png"
-# bitcoin = "/images/bitcoin.png"
-
 # Social share links in post page
 [page.share]
 enable = true
@@ -1072,7 +1053,7 @@ enable = false
 [page.comment.artalk]
 enable = false
 server = "https://yourdomain"
-site = "默认站点"
+site = "Default Site"
 # FixIt 0.3.3 | NEW whether use backend configuration
 useBackendConf = false
 placeholder = ""
@@ -1250,8 +1231,8 @@ images = []
 
 # Publisher info
 [page.seo.publisher]
-name = "Lruihao"
-logoUrl = "/images/avatar.jpg"
+name = "spawn2pwn"
+logoUrl = "/ctf-writeups/images/avatar.jpg"
 
 
 # -------------------------------------------------------------------------------------
@@ -1269,26 +1250,6 @@ dark = "rgb(255 255 255 / 10%)"
 enable = false
 # "eruda", "vConsole" supported
 type = "eruda"
-
-# Content adapters config for component projects
-# https://github.com/hugo-fixit/component-projects
-[projectsAdapters]
-enable = true
-# Whether to show only public repos
-onlyPublic = true
-# Default categories and collections
-categories = ["GitHub"]
-collections = ["project"]
-# Ignore repos in the ignore list
-ignoreList = []
-
-[projectsAdapters.params]
-
-[projectsAdapters.params.postChat]
-upLoadWeb = true
-
-[projectsAdapters.params.postSummary]
-enable = true
 
 # Auto translation configuration
 # See: https://github.com/xnx3/translate/
@@ -1344,4 +1305,3 @@ cropTopPx = 60
 # If true: load tippy/popper from unpkg CDN
 # If false: use local assets/*
 tippyFromCdn = true
-

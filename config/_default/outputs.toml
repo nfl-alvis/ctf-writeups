@@ -12,7 +12,6 @@
 _merge = "shallow"
 home = [
   "html",
-  "rss",
   "jsonfeed",
   "archives",
   "offline",
@@ -26,12 +25,10 @@ page = [
 ]
 section = [
   "html",
-  "rss",
   "jsonfeed"
 ]
 taxonomy = [ "html" ]
 term = [
   "html",
-  "rss",
   "jsonfeed"
 ]
