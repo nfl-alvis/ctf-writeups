@@ -377,21 +377,21 @@ Plume = ""
 HackTheBox = ""
 RootMe = ""
 Feishu = ""
-TryHackMe = ""
+TryHackMe = "spawn2pwn"
 Douyin = ""
 TikTok = ""
 Credly = ""
 Bluesky = ""
 Phone = ""
 
-[social.weixin]
-id = "qr-wx-mp_s.webp"
-weight = 20
-Template = "https://lruihao.cn/images/%v"
-Title = "WeChat"
+# [social.weixin]
+# id = "qr-wx-mp_s.webp"
+# weight = 20
+# Template = "https://lruihao.cn/images/%v"
+# Title = "WeChat"
 
-[social.weixin.icon]
-Class = "fa-brands fa-weixin fa-fw"
+# [social.weixin.icon]
+# Class = "fa-brands fa-weixin fa-fw"
 
 # [social.FixIt]
 # id = "fixit"
@@ -1192,19 +1192,19 @@ katex = false
 
 # FixIt 0.2.14 | NEW Giscus comments config
 [page.comment.giscus]
-enable = false
-repo = ""
-repoId = ""
-category = ""
-categoryId = ""
-mapping = ""
+enable = true
+repo = "nfl-alvis/ctf-writeups"
+repoId = "R_kgDOTMiuDQ"
+category = "Announcements"
+categoryId = "DIC_kwDOTMiuDc4DAjbW"
+mapping = "pathname"
 origin = "https://giscus.app" # FixIt NEW | 0.3.7 Or set it to your self-hosted domain
 strict = "0" # FixIt NEW | 0.2.18
 term = ""
 reactionsEnabled = "1"
 emitMetadata = "0"
 inputPosition = "bottom" # ["top", "bottom"]
-lang = ""
+lang = "en"
 lightTheme = "light"
 darkTheme = "dark"
 lazyLoad = true
