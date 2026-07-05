@@ -15,6 +15,7 @@ on:
       - 'go.mod'
       - 'go.sum'
       - '.github/workflows/**'
+      - 'package.json'
   workflow_run:
     workflows: ['Update theme components']
     types:
