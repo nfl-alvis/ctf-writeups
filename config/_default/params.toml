@@ -789,9 +789,9 @@ aside = [
 ]
 comment = []
 footer = []
-widgets = [
-  "custom/wechat-box.html",
-]
+# widgets = [
+#  "custom/wechat-box.html",
+# ]
 assets = [
   "custom/use-assets.html",
   "inject/shortcode-caniuse.html",
