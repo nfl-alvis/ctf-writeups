@@ -78,7 +78,7 @@ enable = true
 
 # My share URL: https://cloud.umami.is/share/FSPwm1IsrQFY7ZvP/lruihao.cn
 [analytics.umami]
-data_website_id = "4049c0b0-87c9-4573-8ae5-d84449e40e05"
+data_website_id = "6f497423-563c-4f1a-9601-286ce13b5ac0"
 src = "https://cloud.umami.is/script.js"
 data_host_url = ""
 data_domains = ""

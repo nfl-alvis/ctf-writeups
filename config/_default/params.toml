@@ -597,9 +597,9 @@ objectFit = false
 # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
 [githubCorner]
 enable = true
-permalink = "https://github.com/Lruihao/hugo-blog"
+permalink = "https://github.com/nfl-alvis/ctf-writeups"
 title = "View source on GitHub"
-position = "right" # ["left", "right"]
+position = "left" # ["left", "right"]
 
 # FixIt 0.2.14 | NEW Gravatar config
 [gravatar]
@@ -644,7 +644,7 @@ theme = "minimal"
 # Get PostChat Key from my invitation link, thanks for your support!
 # https://ai.zhheo.com/console/login?InviteID=85041330
 [postChat]
-enable = true
+enable = false
 key = "P-HJ9FXI41JLU1WBK1"
 # How users initiate chats: ["iframe", "magic"]
 userMode = "magic"
@@ -690,7 +690,7 @@ hotWords = true
 # FixIt 0.3.17 | NEW Summary AI config
 # See https://ai.zhheo.com/docs/summary.html
 [postSummary]
-enable = true
+enable = false
 # If you set `params.postChat.key`, you don't need to set `params.postSummary.key`
 key = ""
 title = ""
@@ -706,7 +706,7 @@ loadingText = true
 # FixIt 0.4.0 | NEW Podcast AI config
 # See https://ai.zhheo.com/docs/podcast.html
 [podcast]
-enable = true
+enable = false
 
 # FixIt 0.3.10 | NEW Global Feed config for RSS, Atom and JSON feed.
 [feed]
@@ -914,7 +914,7 @@ capitalize = false
 # FixIt 0.3.12 | CHANGED must set `params.page.toc.ordered` to true
 [page.heading.number]
 # whether to enable auto heading numbering
-enable = true
+enable = false
 # FixIt 0.3.3 | NEW only enable in main section pages (default is posts)
 onlyMainSection = true
 
@@ -1254,7 +1254,7 @@ type = "eruda"
 # Auto translation configuration
 # See: https://github.com/xnx3/translate/
 [autoTranslate]
-enable = true
+enable = false
 # The translation service provider, ['client.edge', 'translate.service']
 # See: https://translate.zvo.cn/43086.html
 # service = 'client.edge'
