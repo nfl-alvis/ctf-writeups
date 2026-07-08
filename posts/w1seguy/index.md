@@ -1,4 +1,4 @@
-# W1seguy
+# W1seGuy
 
 
 {{< image src="./images/room_image.webp" >}}
