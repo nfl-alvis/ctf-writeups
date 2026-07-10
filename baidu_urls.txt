@@ -1,3 +1,4 @@
+https://nfl-alvis.github.io/ctf-writeups/posts/corridor/
 https://nfl-alvis.github.io/ctf-writeups/posts/fools-mate/
 https://nfl-alvis.github.io/ctf-writeups/posts/neighbour/
 https://nfl-alvis.github.io/ctf-writeups/posts/lo-fi/
