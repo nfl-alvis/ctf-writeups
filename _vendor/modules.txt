@@ -1,0 +1,11 @@
+# github.com/hugo-fixit/FixIt v0.4.5
+# github.com/hugo-fixit/cmpt-flyfish v1.1.0
+# github.com/hugo-fixit/cmpt-mdevtools v1.1.0
+# github.com/hugo-fixit/cmpt-santa-hat v1.1.0
+# github.com/hugo-fixit/cmpt-translate v1.12.3
+# github.com/hugo-fixit/hugo-json-feed v1.4.0
+# github.com/hugo-fixit/shortcode-asciinema v1.1.0
+# github.com/hugo-fixit/shortcode-caniuse v1.6.0
+# github.com/hugo-fixit/shortcode-docs-bookmark v1.1.2
+# github.com/hugo-fixit/shortcode-mmt-netease v1.5.0
+# github.com/Artexxx/cmpt-post-preview@latest v1.0.1

@@ -1,0 +1,51 @@
+{{- $pp := .Site.Params.postPreview -}}
+{{- if and $pp $pp.enable -}}
+    {{- if ($pp.tippyFromCdn | default false) -}}
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/tippy.css">
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/animations/shift-away.css">
+        <script src="https://unpkg.com/popper.js@1" defer></script>
+        <script src="https://unpkg.com/tippy.js@5" defer></script>
+    {{- else -}}
+        {{- $t1 := resources.Get "libs/tippy.css" | minify | fingerprint -}}
+        <link rel="stylesheet" href="{{ $t1.RelPermalink }}" integrity="{{ $t1.Data.Integrity }}">
+
+        {{- $t2 := resources.Get "libs/shift-away.css" | minify | fingerprint -}}
+        <link rel="stylesheet" href="{{ $t2.RelPermalink }}" integrity="{{ $t2.Data.Integrity }}">
+
+        {{- $p := resources.Get "libs/popper.js" | minify | fingerprint -}}
+        <script src="{{ $p.RelPermalink }}" integrity="{{ $p.Data.Integrity }}" defer></script>
+
+        {{- $t := resources.Get "libs/tippy.js" | minify | fingerprint -}}
+        <script src="{{ $t.RelPermalink }}" integrity="{{ $t.Data.Integrity }}" defer></script>
+    {{- end -}}
+
+    {{- $crop := $pp.cropTopPx | default 60 -}}
+    {{- $scss := resources.Get "css/post-preview.scss" | resources.ExecuteAsTemplate "css/post-preview.gen.scss" (dict "cropTopPx" $crop) -}}
+    {{- $cssOpts := dict "targetPath" "css/post-preview.min.css" "minify" hugo.IsProduction -}}
+    {{- if not hugo.IsProduction -}}
+        {{- $cssOpts = dict "sourceMap" "inline" | merge $cssOpts -}}
+    {{- end -}}
+    {{- $css := $scss | css.Sass $cssOpts | fingerprint -}}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+    {{- $jsOpts := dict "targetPath" "js/post-preview.min.js" "minify" hugo.IsProduction -}}
+    {{- if not hugo.IsProduction -}}
+        {{- $jsOpts = dict "sourceMap" "inline" | merge $jsOpts -}}
+    {{- end -}}
+    {{- $jsOpts = dict "params" (dict
+        "enable" ($pp.enable | default true)
+        "debug" ($pp.debug | default false)
+        "mobileBp" ($pp.mobileBp | default 900)
+        "disableOnHome" ($pp.disableOnHome | default true)
+        "excludeSelector" ($pp.excludeSelector | default "body > div.wrapper > main > div.home")
+        "showDelay" ($pp.showDelay | default 120)
+        "hideDelay" ($pp.hideDelay | default 220)
+        "cropTopPx" $crop
+        "maxBytes" ($pp.maxBytes | default 1200000)
+        "prefetchOnHover" ($pp.prefetchOnHover | default true)
+    ) | merge $jsOpts -}}
+
+    {{- $js := resources.Get "js/post-preview.js" | js.Build $jsOpts | fingerprint -}}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+
+{{- end -}}

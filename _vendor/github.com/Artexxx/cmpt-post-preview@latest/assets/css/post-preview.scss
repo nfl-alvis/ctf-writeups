@@ -1,0 +1,217 @@
+@import "_variables";
+
+:root {
+  --pp-crop: {
+  {
+    .cropTopPx
+  }
+  }
+  px;
+}
+
+.tippy-popper[data-theme~="pp"] {
+  max-width: none !important;
+  z-index: 99999;
+}
+
+.tippy-tooltip.pp-theme {
+  background: transparent;
+  padding: 0;
+}
+
+.tippy-tooltip.pp-theme .tippy-content {
+  padding: 0;
+}
+
+.tippy-arrow {
+  display: none !important;
+}
+
+.pp-box {
+  --pp-bg: #{$global-background-color};
+  --pp-text: #{$global-font-color};
+  --pp-text-soft: #{darken($global-font-secondary-color, 25%) };
+  --pp-border: #{$global-border-color};
+  --pp-link: #{$single-link-color};
+  --pp-link-hover: #{$single-link-hover-color};
+  --pp-chip: #{rgba($global-border-color, .55)};
+  --pp-head-bg: #{rgba($global-background-color, .75)};
+
+  &.pp--dark {
+    --pp-bg: #{$global-background-color-dark};
+    --pp-text: #{$global-font-color-dark};
+    --pp-text-soft: #{lighten($global-font-secondary-color, 25%) };
+    --pp-border: #{$global-border-color-dark};
+    --pp-link: #{$single-link-color-dark};
+    --pp-link-hover: #{$single-link-hover-color-dark};
+    --pp-chip: #{rgba($global-border-color-dark, .55)};
+    --pp-head-bg: #{rgba($global-background-color-dark, .55)};
+  }
+
+  width: 420px;
+  max-width: calc(100vw - 24px);
+
+  height: 30vh;
+  max-height: 680px;
+  min-width: 320px;
+  min-height: 240px;
+
+  border-radius: 14px;
+  border: 1px solid var(--pp-border);
+  background: var(--pp-bg);
+  box-shadow: var(--pp-shadow);
+  overflow: hidden;
+  color: var(--pp-text);
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
+
+  [data-theme='dark'] & {
+    filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, .60));
+  }
+}
+
+.pp-head {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .25rem .75rem;
+  border-bottom: 1px solid var(--pp-border);
+  background: var(--pp-head-bg);
+}
+
+.pp-path {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+  min-width: 0;
+  flex: 1;
+}
+
+.pp-seg {
+  display: inline-flex;
+  min-width: 0;
+  color: var(--pp-text-soft);
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    color: var(--pp-text);
+  }
+}
+
+.pp-seg__chip {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 .55rem;
+  border-radius: 999px;
+  border: 1px solid var(--pp-chip);
+  font-size: 12px;
+  line-height: 1;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pp-sep {
+  color: var(--pp-text-soft);
+  opacity: .8;
+  user-select: none;
+}
+
+.pp-url {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 .55rem;
+  border-radius: 999px;
+  border: 1px solid var(--pp-chip);
+  color: var(--pp-text-soft);
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover {
+    color: var(--pp-link-hover);
+    border-color: var(--pp-link-hover);
+  }
+}
+
+.pp-close {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid var(--pp-chip);
+  background: transparent;
+  color: var(--pp-text);
+  opacity: .85;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+    color: var(--pp-link-hover);
+    border-color: var(--pp-link-hover);
+  }
+}
+
+.pp-close__icon {
+  width: 16px;
+  height: 16px;
+  stroke: var(--pp-text);
+  stroke-width: 2.25;
+  stroke-linecap: round;
+  fill: none;
+  display: block;
+}
+
+.pp-body {
+  height: calc(100% - 50px);
+  overflow: auto;
+  content-visibility: auto;
+  contain: content;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pp-doc {
+  padding: .75rem;
+}
+
+.pp-doc__inner {
+  transform: translateY(calc(-1 * var(--pp-crop)));
+  padding-top: var(--pp-crop);
+
+  article {
+    width: 99% !important;
+  }
+
+  .archive {
+    width: 90% !important;
+  }
+
+  .single-title {
+    padding: 0 !important;
+    font-size: 1.3rem;
+  }
+}
+
+.pp-doc img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.pp-doc a {
+  color: var(--pp-link);
+  text-decoration-thickness: .08em;
+
+  &:hover {
+    color: var(--pp-link-hover);
+  }
+}
+
