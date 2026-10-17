@@ -1,10 +1,12 @@
 {
   "origins": [
-    "https://nfl-alvis.github.io"
+    "https://nfl-alvis.github.io",
+    "https://ctf.spawn2pwn.my.id"
   ],
   "originsRegex": [
     "http://localhost:[0-9]+",
-    "http://127\\.0\\.0\\.1:[0-9]+"
+    "http://127\\.0\\.0\\.1:[0-9]+",
+    "https://.*\\.vercel\\.app"
   ],
   "defaultCommentOrder": "newest"
 }
