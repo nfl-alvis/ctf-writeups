@@ -8,4 +8,4 @@
 # github.com/hugo-fixit/shortcode-caniuse v1.6.0
 # github.com/hugo-fixit/shortcode-docs-bookmark v1.1.2
 # github.com/hugo-fixit/shortcode-mmt-netease v1.5.0
-# github.com/Artexxx/cmpt-post-preview@latest v1.0.1
+# github.com/Artexxx/cmpt-post-preview v1.0.1

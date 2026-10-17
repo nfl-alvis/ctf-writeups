@@ -35,7 +35,6 @@ path = "github.com/hugo-fixit/shortcode-mmt-netease"
 
 [[imports]]
 path = "github.com/Artexxx/cmpt-post-preview"
-version = "latest"
 
 [hugoVersion]
 extended = true
