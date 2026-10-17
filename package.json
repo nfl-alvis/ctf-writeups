@@ -1,19 +1,19 @@
 {
-  "name": "@lruihao/hugo-blog",
+  "name": "@spawn2pwn/ctf-writeups",
   "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@10.15.1",
-  "description": "Lruihao's Note - A front-end technical blog.",
-  "homepage": "https://github.com/Lruihao/hugo-blog#readme",
+  "description": "Personal CTF writeups and cybersecurity notes.",
+  "homepage": "https://github.com/nfl-alvis/ctf-writeups#readme",
   "bugs": {
-    "url": "https://github.com/Lruihao/hugo-blog/issues"
+    "url": "https://github.com/nfl-alvis/ctf-writeups/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lruihao/hugo-blog.git"
+    "url": "git+https://github.com/nfl-alvis/ctf-writeups.git"
   },
   "license": "MIT",
-  "author": "Lruihao (https://github.com/Lruihao)",
+  "author": "spawn2pwn (https://github.com/nfl-alvis)",
   "scripts": {
     "algolia": "atomic-algolia",
     "build": "hugo --environment production --gc --minify",

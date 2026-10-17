@@ -54,7 +54,7 @@ avatar = "/images/IdaWin.png"
 [gitInfo]
 # e.g. "https://github.com/hugo-fixit/docs"
 repo = "https://github.com/nfl-alvis/ctf-writeups"
-branch = "docs"
+branch = "main"
 # the content directory path relative to the root of the repository
 dir = "content"
 # the issue template for reporting issue of the posts
@@ -83,7 +83,7 @@ dark = "#252627"
 [search]
 enable = true
 # type of search engine ["algolia", "fuse", "cse", "post-chat"]
-type = "algolia"
+type = "fuse"
 # max index length of the chunked content
 contentLength = 4000
 # placeholder of the search bar
@@ -606,7 +606,7 @@ position = "left" # ["left", "right"]
 # FixIt 0.2.18 | NEW Depends on the author's email, if the author's email is not set, the local avatar will be used
 enable = true
 # Gravatar host, default: "www.gravatar.com"
-host = "gravatar.loli.net" # ["cravatar.cn", "gravatar.loli.net", ...]
+host = "www.gravatar.com" # ["cravatar.cn", "gravatar.loli.net", ...]
 style = "mp" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
 
 # FixIt 0.2.16 | NEW Back to top
@@ -805,9 +805,7 @@ postTocAfter = []
 postContentBefore = []
 postContentAfter = []
 postFooterBefore = []
-postFooterAfter = [
-  "custom/post-footer-after.html",
-]
+postFooterAfter = []
 
 # FixIt 0.2.15 | NEW Developer options
 # Select the scope named `public_repo` to generate personal access token,
