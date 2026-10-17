@@ -1,7 +1,7 @@
-https://nfl-alvis.github.io/ctf-writeups/posts/corridor/
-https://nfl-alvis.github.io/ctf-writeups/posts/fools-mate/
-https://nfl-alvis.github.io/ctf-writeups/posts/neighbour/
-https://nfl-alvis.github.io/ctf-writeups/posts/lo-fi/
-https://nfl-alvis.github.io/ctf-writeups/posts/w1seguy/
-https://nfl-alvis.github.io/ctf-writeups/search/
-https://nfl-alvis.github.io/ctf-writeups/about/
+https://ctf.spawn2pwn.my.id/posts/corridor/
+https://ctf.spawn2pwn.my.id/posts/fools-mate/
+https://ctf.spawn2pwn.my.id/posts/neighbour/
+https://ctf.spawn2pwn.my.id/posts/lo-fi/
+https://ctf.spawn2pwn.my.id/posts/w1seguy/
+https://ctf.spawn2pwn.my.id/search/
+https://ctf.spawn2pwn.my.id/about/

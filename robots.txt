@@ -97,4 +97,4 @@ Disallow: /
 User-agent: ClaudeBot
 Disallow: /
 
-Sitemap: https://nfl-alvis.github.io/sitemap.xml
+Sitemap: https://ctf.spawn2pwn.my.id/sitemap.xml

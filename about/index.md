@@ -13,5 +13,5 @@ SPAWN2PWN is a personal CTF writeup site for documenting challenges, notes, and 
 ---
 
 > Author: [spawn2pwn](https://github.com/nfl-alvis)  
-> URL: https://nfl-alvis.github.io/ctf-writeups/about/  
+> URL: https://ctf.spawn2pwn.my.id/about/  
 

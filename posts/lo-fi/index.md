@@ -59,5 +59,5 @@ To prevent this issue, applications should avoid directly including files based 
 ---
 
 > Author: [spawn2pwn](https://github.com/nfl-alvis)  
-> URL: https://nfl-alvis.github.io/ctf-writeups/posts/lo-fi/  
+> URL: https://ctf.spawn2pwn.my.id/posts/lo-fi/  
 

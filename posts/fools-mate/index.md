@@ -69,5 +69,5 @@ Security-sensitive validation should always be implemented on the server side. I
 ---
 
 > Author: [spawn2pwn](https://github.com/nfl-alvis)  
-> URL: https://nfl-alvis.github.io/ctf-writeups/posts/fools-mate/  
+> URL: https://ctf.spawn2pwn.my.id/posts/fools-mate/  
 

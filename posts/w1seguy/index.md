@@ -251,5 +251,5 @@ This challenge demonstrates why repeating-key XOR should not be used for encrypt
 ---
 
 > Author: [spawn2pwn](https://github.com/nfl-alvis)  
-> URL: https://nfl-alvis.github.io/ctf-writeups/posts/w1seguy/  
+> URL: https://ctf.spawn2pwn.my.id/posts/w1seguy/  
 

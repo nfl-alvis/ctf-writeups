@@ -105,5 +105,5 @@ In this case, the developer assumed that hiding object identifiers behind MD5 ha
 ---
 
 > Author: [spawn2pwn](https://github.com/nfl-alvis)  
-> URL: https://nfl-alvis.github.io/ctf-writeups/posts/corridor/  
+> URL: https://ctf.spawn2pwn.my.id/posts/corridor/  
 

@@ -63,5 +63,5 @@ To prevent this issue, the server should derive the current user's identity from
 ---
 
 > Author: [spawn2pwn](https://github.com/nfl-alvis)  
-> URL: https://nfl-alvis.github.io/ctf-writeups/posts/neighbour/  
+> URL: https://ctf.spawn2pwn.my.id/posts/neighbour/  
 
