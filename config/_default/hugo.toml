@@ -4,7 +4,7 @@
 # website title
 title = "ꜱᴘᴀᴡɴ𝟐ᴘᴡɴ"
 # Hostname (and path) to the root
-baseURL = "https://nfl-alvis.github.io/ctf-writeups/"
+baseURL = "https://ctf.spawn2pwn.my.id/"
 # theme list
 # theme = ["FixIt"] # enable in your site config file
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]

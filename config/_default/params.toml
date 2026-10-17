@@ -17,7 +17,7 @@ fingerprint = ""
 # date format
 dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
-images = ["/ctf-writeups/images/apple-devices-preview.webp"]
+images = ["/images/apple-devices-preview.webp"]
 # FixIt 0.2.12 | NEW enable PWA
 enablePWA = true
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
@@ -272,7 +272,7 @@ onlyFirstPage = false
 # Gravatar Email for preferred avatar in home page
 gravatarEmail = ""
 # URL of avatar shown in home page, default is author's avatar
-avatarURL = "/ctf-writeups/images/IdaWin.png"
+avatarURL = "/images/IdaWin.png"
 # FixIt 0.2.17 | NEW identifier of avatar menu link
 avatarMenu = "about"
 # title shown in home page (HTML format is supported)
@@ -519,9 +519,9 @@ sogou = ""
 # Site SEO config
 [seo]
 # image URL
-image = "/ctf-writeups/images/apple-devices-preview.webp"
+image = "/images/apple-devices-preview.webp"
 # thumbnail URL
-thumbnailUrl = "/ctf-writeups/images/tn.webp"
+thumbnailUrl = "/images/tn.webp"
 
 # Analytics config
 [analytics]
@@ -666,7 +666,7 @@ blackDom = []
 frameWidth = "" # e.g. "375px"
 frameHeight = "" # e.g. "600px"
 # only for magic mode
-userIcon = "/ctf-writeups/images/avatar.jpg"
+userIcon = "/images/avatar.jpg"
 defaultChatQuestions = [
   "What is this site?",
   "What are the latest writeups?",
@@ -1232,7 +1232,7 @@ images = []
 # Publisher info
 [page.seo.publisher]
 name = "spawn2pwn"
-logoUrl = "/ctf-writeups/images/avatar.jpg"
+logoUrl = "/images/avatar.jpg"
 
 
 # -------------------------------------------------------------------------------------
