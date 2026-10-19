@@ -5,6 +5,10 @@
 
 > **Access the hidden item in this Valentine's gift shop.**
 
+{{< admonition tldr "TL;DR" >}}
+TryHeartMe is an easy TryHackMe web challenge that demonstrates a JWT signature-stripping vulnerability. By modifying the JWT payload to change the `role` claim from `user` to `admin` and removing the signature, it is possible to escalate privileges, gain access to the admin dashboard, and purchase the hidden ValenFlag item.
+{{< /admonition >}}
+
 ## Scenario
 
 The challenge description provides us with the following message:
